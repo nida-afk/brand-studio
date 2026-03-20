@@ -129,7 +129,7 @@ const CLIENTS = [
 const SVCS = [
   { id: "ugc", icon: <Play className="w-6 h-6" />, title: "UGC Content", short: "Authentic creator videos that convert at every funnel stage.", color: B, bg: "#EBF2FF", tagline: "Real People. Real Content. Real Conversions.", features: ["Unboxing & Review Videos", "Testimonials & Social Proof", "Tutorial & Demo Reels", "Lifestyle Content", "UGC for Meta, Google & YouTube", "Hook Testing & Multi-Variant"], results: [{ n: "3-5x", l: "Higher CTR" }, { n: "67%", l: "Lower CPA" }, { n: "48hr", l: "Avg delivery" }] },
   { id: "influencer", icon: <Star className="w-6 h-6" />, title: "Influencer Marketing", short: "End-to-end influencer campaigns from nano to celebrity.", color: "#7C3AED", bg: "#F3E8FF", tagline: "The Right Voice. The Right Audience.", features: ["Nano, Micro & Macro Campaigns", "Celebrity Tie-ups", "Instagram Reels & Stories", "YouTube Integrations", "Brand Safety Vetting", "Full Campaign Management", "Unboxing Videos (Makeup & Skincare)", "Testimonial Videos"], results: [{ n: "500+", l: "Vetted influencers" }, { n: "1B+", l: "Combined reach" }, { n: "4.2%", l: "Avg engagement" }] },
-  { id: "social-ads", icon: <Megaphone className="w-6 h-6" />, title: "Social Media Ads", short: "Paid social on Meta, Instagram & YouTube built on data.", color: "#F97316", bg: "#FFF4ED", tagline: "Scroll-Stopping Ads. Measurable ROI.", features: ["Meta & Instagram Ads", "YouTube & Google Display", "Retargeting Campaigns", "Creative A/B Testing", "Audience Segmentation", "Daily Budget Optimisation", "Product Demo Ads"], results: [{ n: "4.8x", l: "Average ROAS" }, { n: "40%", l: "Lower CPM" }, { n: "2x", l: "Conversion uplift" }] },
+  { id: "social-ads", icon: <Megaphone className="w-6 h-6" />, title: "Social Media Ads", short: "Paid social on Meta, Instagram & YouTube built on data.", color: "#1A56DB", bg: "#EBF2FF", tagline: "Scroll-Stopping Ads. Measurable ROI.", features: ["Meta & Instagram Ads", "YouTube & Google Display", "Retargeting Campaigns", "Creative A/B Testing", "Audience Segmentation", "Daily Budget Optimisation", "Product Demo Ads"], results: [{ n: "4.8x", l: "Average ROAS" }, { n: "40%", l: "Lower CPM" }, { n: "2x", l: "Conversion uplift" }] },
   { id: "performance", icon: <Target className="w-6 h-6" />, title: "Performance Marketing", short: "Full-funnel strategies engineered around ROAS and CPA.", color: "#059669", bg: "#ECFDF5", tagline: "Every Rupee Accountable.", features: ["Google Search & Shopping", "Meta Performance Campaigns", "YouTube Video Funnels", "Landing Page CRO", "ROAS & CPA Optimisation", "Weekly Performance Reviews"], results: [{ n: "120+", l: "Brands scaled" }, { n: "₹50Cr+", l: "Ad spend managed" }, { n: "3.8x", l: "Avg ROAS" }] },
   { id: "content", icon: <PenTool className="w-6 h-6" />, title: "Content Marketing", short: "Blogs, copy and brand storytelling that build authority.", color: "#0EA5E9", bg: "#E0F2FE", tagline: "Content That Ranks and Converts.", features: ["SEO Blog Writing", "Social Media Copywriting", "Email Campaigns", "Case Studies & Whitepapers", "Brand Storytelling", "Content Calendar Strategy", "Problem-Solution Ads"], results: [{ n: "3x", l: "Organic traffic growth" }, { n: "60%", l: "More time-on-site" }, { n: "45%", l: "Higher email opens" }] },
   { id: "seo", icon: <Search className="w-6 h-6" />, title: "SEO", short: "Technical SEO and link building that improves rankings.", color: "#DC2626", bg: "#FEF2F2", tagline: "Rank Higher. Grow Organically.", features: ["Full Technical Audit", "Keyword Research", "On-Page Optimisation", "Off-Page & Link Building", "Local SEO", "Monthly Ranking Reports"], results: [{ n: "2.5x", l: "Organic traffic" }, { n: "Top 5", l: "Keyword rankings" }, { n: "35%", l: "More organic leads" }] },
@@ -166,7 +166,7 @@ const TESTIMONIALS = [
     role: "Onsite Storage Solutions", 
     text: "Codism built a custom inventory and rental management system that transformed our business. Their technical depth and ability to solve complex logistics challenges are unmatched in the industry. The project was delivered on time and within budget, and their post-launch support has been outstanding.", 
     avatar: "OSS", 
-    col: "#F97316"
+    col: "#1A56DB"
   },
   { 
     name: "Marketing Head", 
@@ -185,69 +185,234 @@ const TESTIMONIALS = [
 ];
 
 const CASE_STUDIES = [
-  { 
-    brand: "Tech Mahindra", 
-    cat: "Enterprise Solutions", 
-    result: "30% Efficiency Gain", 
-    sub: "Digital Transformation & Staff Augmentation", 
-    desc: "We helped Tech Mahindra streamline their internal operations by implementing a custom resource management platform. Our solution integrated seamlessly with their existing ERP, reducing manual data entry by 45%. Additionally, we provided specialized technical talent to accelerate their project delivery timelines, ensuring they met critical deadlines for their global clients.",
-    col: B, 
-    bg: "#EBF2FF" 
+  {
+    id: "01",
+    title: "From Invisible to Irresistible",
+    subtitle: "How a D2C Skincare Brand 4x'd Its ROAS in 90 Days with UGC-Led Performance Ads",
+    industry: "D2C Skincare & Beauty",
+    duration: "90 Days",
+    services: "UGC Production + Meta Ads",
+    market: "India (Pan-India)",
+    challenge: {
+      text: "Our client, a homegrown D2C skincare brand with a promising product line, was struggling to break through the noise in one of India's most competitive categories. Despite having an excellent product, they were burning budget on generic creative assets that looked polished but failed to convert.",
+      bullets: [
+        "ROAS stagnating at 0.9x — below break-even",
+        "High-production studio ads generating poor engagement",
+        "No authentic social proof to build trust with new audiences",
+        "Rising CPMs due to creative fatigue across all ad sets",
+        "Conversion rate on landing pages below 1.2%"
+      ]
+    },
+    strategy: [
+      {
+        phase: "Phase 1 — UGC Creative Production (Weeks 1–3)",
+        bullets: [
+          "Sourced and briefed 12 micro-creators across skin types, age groups, and geographies",
+          "Produced 40+ UGC video assets in native formats: unboxings, before/after routines, 'Get Ready With Me' hooks, and honest reviews",
+          "Developed 3 distinct hook strategies: problem-agitate-solution, social proof stacking, and curiosity-gap openers"
+        ]
+      },
+      {
+        phase: "Phase 2 — Performance Campaign Architecture (Weeks 3–5)",
+        bullets: [
+          "Built a structured Meta Ads testing framework: 6 ad sets, 3 audiences, 5–7 creatives per set",
+          "Deployed Cost Cap and Minimum ROAS bidding strategies simultaneously",
+          "Integrated Advantage+ Shopping Campaigns alongside manual targeting for A/B comparison"
+        ]
+      },
+      {
+        phase: "Phase 3 — Optimisation & Scaling (Weeks 6–13)",
+        bullets: [
+          "Weekly creative audits: killed underperformers within 72 hours, doubled budgets on winning UGCs",
+          "Iterated winning hooks into carousel, static, and Reels variations",
+          "Retargeting sequences built around warm audiences with deeper social proof content"
+        ]
+      }
+    ],
+    results: [
+      { label: "ROAS", value: "4.2x", sub: "Up from 0.9x" },
+      { label: "Lower CPA", value: "68%", sub: "vs. Month 1" },
+      { label: "CTR", value: "3.1%", sub: "Up from 0.6%" },
+      { label: "Revenue Driven", value: "₹82L", sub: "In 90 Days" }
+    ],
+    testimonial: {
+      quote: "We had tried three agencies before Brand Propel Studio. None of them understood UGC the way they do. Within the first month, we could see the difference — people were actually watching our ads till the end. The results speak for themselves.",
+      author: "Founder, D2C Skincare Brand (Name Withheld Confidentially)"
+    },
+    col: "#1A56DB",
+    bg: "#EBF2FF"
   },
-  { 
-    brand: "Sovereign Solutions", 
-    cat: "Custom Software", 
-    result: "Scalable Architecture", 
-    sub: "End-to-End IT Consulting & Development", 
-    desc: "Developed a multi-tenant SaaS platform with a microservices architecture, allowing Sovereign Solutions to onboard thousands of users while maintaining high performance and security standards. The platform features real-time data synchronization, advanced analytics dashboards, and a robust API for third-party integrations, positioning them as a leader in their market.",
-    col: "#7C3AED", 
-    bg: "#F3E8FF" 
+  {
+    id: "02",
+    title: "Scaling a Fitness Brand to ₹1 Crore Monthly Revenue",
+    subtitle: "Performance Marketing + UGC Strategy That Turned Scroll-Stoppers into Buyers",
+    industry: "Fitness & Wellness (Supplements)",
+    duration: "6 Months",
+    services: "UGC + Meta + Google Ads",
+    market: "India (Tier 1 & Tier 2 Cities)",
+    challenge: {
+      text: "A rising fitness supplements brand came to us with an ambitious goal: reach ₹1 crore in monthly revenue within 6 months. At the time of onboarding, they were doing approximately ₹18 lakhs per month with inconsistent ad performance and no structured content strategy.",
+      bullets: [
+        "Monthly revenue plateaued at ₹18–22 lakhs with no growth trajectory",
+        "Zero UGC library — all ads were brand-produced, studio-quality but low on trust",
+        "Google Ads account was unstructured with no Shopping feed optimisation",
+        "No retargeting infrastructure — losing warm traffic daily",
+        "Customer acquisition cost exceeding ₹950 per order"
+      ]
+    },
+    strategy: [
+      {
+        phase: "UGC Content Engine",
+        bullets: [
+          "Onboarded 20 fitness creators — athletes, gym-goers, home workout enthusiasts — spanning men and women across age groups",
+          "Produced 60+ UGC assets monthly: transformation testimonials, 'What I Eat in a Day' integrations, workout routine embeds, and myth-busting educational content",
+          "Created a UGC content calendar aligned with fitness seasonality: New Year, summer shred, festive gifting"
+        ]
+      },
+      {
+        phase: "Meta Ads Restructure",
+        bullets: [
+          "Rebuilt campaign structure: TOFU (Awareness via UGC hooks) → MOFU (Engagement + social proof) → BOFU (Offer-driven retargeting)",
+          "Launched Collaborative Ads with creator handles to leverage authentic reach",
+          "Dynamic Creative Testing with 100+ creative combinations in the first 60 days"
+        ]
+      },
+      {
+        phase: "Google Ads & Shopping",
+        bullets: [
+          "Overhauled Product Feed with optimised titles, descriptions, and GTIN data",
+          "Launched Performance Max campaigns anchored with UGC assets",
+          "Search campaigns targeting high-intent keywords with tightly themed ad groups"
+        ]
+      }
+    ],
+    results: [
+      { label: "Monthly Revenue", value: "₹1.08Cr", sub: "By Month 6" },
+      { label: "Revenue Growth", value: "5.6x", sub: "In 6 Months" },
+      { label: "CAC", value: "₹310", sub: "Down from ₹950" },
+      { label: "Blended ROAS", value: "6.8x", sub: "Across Channels" }
+    ],
+    testimonial: {
+      quote: "The team at Brand Propel Studio didn't just run ads — they built us a machine. The UGC content they created became our best-performing assets across every single channel. We hit our 6-month target in month 5.",
+      author: "Co-Founder, Fitness Supplements Brand (Name Withheld Confidentially)"
+    },
+    col: "#1A56DB",
+    bg: "#EBF2FF"
   },
-  { 
-    brand: "Oodlebit", 
-    cat: "Fintech / Crypto", 
-    result: "Secure Exchange", 
-    sub: "Cryptocurrency Trading Platform Development", 
-    desc: "Built a high-frequency trading engine with advanced security protocols, cold storage integration, and a real-time order matching system for a global cryptocurrency exchange. We implemented multi-signature wallets, 2FA, and automated KYC/AML checks, ensuring a secure and compliant trading environment for over 100,000 active users.",
-    col: "#F97316", 
-    bg: "#FFF4ED" 
+  {
+    id: "03",
+    title: "265% More Lead Volume for an EdTech Brand",
+    subtitle: "How Strategic UGC & Lead-Gen Campaigns Slashed CPL by 57%",
+    industry: "EdTech / Online Education",
+    duration: "4 Months",
+    services: "UGC + Meta Lead Gen + YouTube",
+    market: "India (English + Regional)",
+    challenge: {
+      text: "An EdTech platform offering professional upskilling courses approached Brand Propel Studio with a critical problem: their cost per lead (CPL) had risen to ₹420 per lead — nearly double the industry benchmark — and lead quality had deteriorated significantly, with low show-up rates on demo calls.",
+      bullets: [
+        "CPL at ₹420 against a target of ₹180",
+        "Demo call show-up rates below 22%",
+        "Low ad relevance scores (2–4 out of 10) across Meta campaigns",
+        "No student testimonial or social proof content in the ad mix",
+        "YouTube pre-roll campaigns generating views but zero conversions"
+      ]
+    },
+    strategy: [
+      {
+        phase: "Student UGC Programme",
+        bullets: [
+          "Identified and briefed 15 past students to create authentic transformation stories — 'Where I was vs. where I am now' style content",
+          "Produced 8 long-form video testimonials (60–90 sec) and 25 short-form clips (15–30 sec) optimised for Reels and YouTube Shorts",
+          "Created 'Day in the Life' UGC showing how students balanced the course with jobs and family — addressing the #1 objection"
+        ]
+      },
+      {
+        phase: "Meta Lead Generation Campaigns",
+        bullets: [
+          "Launched Instant Form campaigns using UGC hooks paired with specific outcome promises",
+          "A/B tested 4 lead form lengths — identified the optimal 3-field form that increased completion rates by 44%",
+          "Built lookalike audiences from existing enrolled students to find high-quality prospects"
+        ]
+      },
+      {
+        phase: "YouTube Strategy",
+        bullets: [
+          "Repurposed long-form UGC testimonials as YouTube pre-roll with the first 5 seconds engineered as a powerful scroll-stopper",
+          "Targeted intent-based audiences: career change seekers, professional certification researchers",
+          "Created remarketing sequences: awareness UGC → testimonial → offer"
+        ]
+      }
+    ],
+    results: [
+      { label: "More Leads", value: "265%", sub: "Month 1 vs Month 4" },
+      { label: "CPL Achieved", value: "₹182", sub: "Down from ₹420" },
+      { label: "Show-Up Rate", value: "51%", sub: "Up from 22%" },
+      { label: "CPL Reduction", value: "57%", sub: "In 4 Months" }
+    ],
+    testimonial: {
+      quote: "The quality of leads completely transformed. Our sales team went from struggling to fill demo slots to having a waiting list. The student stories Brand Propel Studio captured were so powerful — we use them everywhere now, not just in ads.",
+      author: "Marketing Head, EdTech Platform (Name Withheld Confidentially)"
+    },
+    col: "#7C3AED",
+    bg: "#F3E8FF"
   },
-  { 
-    brand: "Stone DesignWorks", 
-    cat: "UI/UX & Web", 
-    result: "Modern Interface", 
-    sub: "Creative Design & Frontend Engineering", 
-    desc: "Transformed a legacy design portfolio into a modern, interactive web experience using React and Framer Motion. We focused on creating a seamless user journey with high-quality animations and a mobile-first approach. The new site resulted in a 50% increase in lead generation and a 35% reduction in bounce rate within the first month of launch.",
-    col: "#059669", 
-    bg: "#ECFDF5" 
-  },
-  { 
-    brand: "ReadySetBoom", 
-    cat: "Digital Marketing", 
-    result: "4x ROAS", 
-    sub: "Performance Strategy & Campaign Management", 
-    desc: "Executed a full-funnel performance marketing campaign across Meta and Google, optimizing creative hooks and audience segments to achieve a record-breaking return on ad spend. We managed a monthly ad spend of ₹15L, focusing on data-driven creative testing and aggressive scaling of winning campaigns, leading to a 3x increase in monthly revenue.",
-    col: "#0EA5E9", 
-    bg: "#E0F2FE" 
-  },
-  { 
-    brand: "Sunset BBQ Grill", 
-    cat: "E-commerce", 
-    result: "40% Sales Boost", 
-    sub: "Magento to Shopify Migration & SEO", 
-    desc: "Successfully migrated a complex e-commerce store with 5,000+ SKUs to Shopify, implementing a custom theme and an aggressive SEO strategy that dominated local search rankings. We optimized page load speeds from 6s to 1.5s and implemented a structured data strategy that increased organic search visibility by 120% in just 90 days.",
-    col: "#DC2626", 
-    bg: "#FEF2F2" 
-  },
-  { 
-    brand: "Cross Point Design", 
-    cat: "Web Development", 
-    result: "Responsive Design", 
-    sub: "Custom Web Solutions for Creative Agencies", 
-    desc: "Developed a series of high-performance landing pages for a creative agency, focusing on mobile-first design and lightning-fast load times to maximize conversion rates. Our solution included a custom CMS for easy content updates and integrated A/B testing tools, helping the agency increase their client conversion rates by an average of 25%.",
-    col: "#0D9488", 
-    bg: "#F0FDFA" 
-  },
+  {
+    id: "04",
+    title: "Building a ₹50L/Month D2C Home Brand from Scratch",
+    subtitle: "Zero to Scale: UGC-First Launch Strategy for a Home & Lifestyle Brand",
+    industry: "Home Décor & Lifestyle",
+    duration: "5 Months",
+    services: "UGC Strategy + Meta + Influencer",
+    market: "India (Urban, Tier 1)",
+    challenge: {
+      text: "This case study is about a brand launch, not a turnaround. A home décor and lifestyle D2C brand approached us at pre-launch stage — no existing customer base, no brand awareness, no content library, and a modest initial marketing budget of ₹4 lakhs per month.",
+      bullets: [
+        "Zero brand awareness — launching into a competitive, aesthetic-driven category",
+        "Limited budget requiring extremely high creative efficiency",
+        "No existing customers to generate organic social proof",
+        "Long consideration cycle — home purchases require inspiration before transaction",
+        "Need to establish brand aesthetic while maintaining UGC authenticity"
+      ]
+    },
+    strategy: [
+      {
+        phase: "Pre-Launch: Building the UGC Asset Bank (Month 1)",
+        bullets: [
+          "Seeded products with 25 home décor creators, interior styling enthusiasts, and lifestyle micro-influencers",
+          "Briefed creators to produce content in 5 formats: room tours, styling tutorials, product unboxings, 'Before & After' transformations, and gifting moments",
+          "Produced 80+ UGC assets before running a single paid rupee — establishing a robust creative library"
+        ]
+      },
+      {
+        phase: "Launch Campaign — Month 2–3",
+        bullets: [
+          "Meta Awareness + Traffic campaigns using room transformation and styling UGC as hero creatives",
+          "Launched a Catalogue Sales campaign with lifestyle UGC as ad creative — a key differentiator vs. competitor product images",
+          "Collaborated with 5 larger home décor influencers (100K–500K) for brand credibility content — amplified via paid dark posts"
+        ]
+      },
+      {
+        phase: "Scale & Retention — Month 4–5",
+        bullets: [
+          "Activated first-buyer retargeting with user-submitted photos (collected via post-purchase email flow)",
+          "Launched a customer UGC incentive programme: discount in exchange for styled photos — generating 40+ organic assets monthly",
+          "Built Google Shopping presence with UGC-enhanced product listings"
+        ]
+      }
+    ],
+    results: [
+      { label: "Month 5 Revenue", value: "₹51L", sub: "From ₹0 at Launch" },
+      { label: "ROAS", value: "11.4x", sub: "On Best Performing UGC" },
+      { label: "Conversion Rate", value: "4.2%", sub: "Category Avg: 1.8%" },
+      { label: "Repeat Purchase", value: "38%", sub: "Within 90 Days" }
+    ],
+    testimonial: {
+      quote: "We came to Brand Propel Studio with a dream and a tight budget. They made every rupee work. The UGC content they created made our brand look like it had been around for years. We went from zero to a brand people actually talk about — in five months.",
+      author: "Founder & CEO, Home & Lifestyle Brand (Name Withheld Confidentially)"
+    },
+    col: "#059669",
+    bg: "#ECFDF5"
+  }
 ];
 
 const BLOG_POSTS = [
@@ -297,7 +462,7 @@ const CREATORS_LIST = [
 ];
 
 const PRICING = [
-  { plan: "Starter", price: "Rs 49,999", period: "/mo", desc: "For early-stage D2C brands", hot: false, cta: "Get Started", features: ["8 UGC Videos/month", "2 Creator Profiles", "Meta Ad Setup", "Monthly Report", "Account Manager"] },
+  { plan: "Starter", price: "Rs 49,999", period: "/mo", desc: "For early-stage D2C brands", hot: false, cta: "Join as Influencer", features: ["8 UGC Videos/month", "2 Creator Profiles", "Meta Ad Setup", "Monthly Report", "Account Manager"] },
   { plan: "Growth", price: "Rs 1,19,999", period: "/mo", desc: "The full engine for scaling", hot: true, cta: "Most Popular", features: ["20 UGC Videos/month", "6 Creator Profiles", "Meta + Google Campaigns", "1 Influencer Campaign/mo", "Creative Testing Lab", "Weekly Dashboard", "Performance Optimisation"] },
   { plan: "Scale", price: "Custom", period: "", desc: "Enterprise & agency partnerships", hot: false, cta: "Talk to Us", features: ["Unlimited UGC Volume", "Dedicated Creator Pod", "Full-Funnel Strategy", "Celebrity Influencers", "White-label Option", "24/7 Priority Support"] },
 ];
@@ -305,7 +470,7 @@ const PRICING = [
 const CREATORS = [
   { name: "Sneha R.", niche: "Beauty", handle: "@snehacreates", flw: "240K", bg: "#FFE4EC", tc: "#C42D5A" },
   { name: "Arjun M.", niche: "Fitness", handle: "@fitwitharjun", flw: "180K", bg: "#E4F5FF", tc: "#0A72B8" },
-  { name: "Kavya S.", niche: "Food", handle: "@kavyaeats", flw: "310K", bg: "#FFF3E0", tc: "#B85C00" },
+  { name: "Kavya S.", niche: "Food", handle: "@kavyaeats", flw: "310K", bg: "#F3F7FF", tc: "#1E429F" },
   { name: "Rohit D.", niche: "Tech", handle: "@techwithrohit", flw: "420K", bg: "#E8F5E9", tc: "#1B7A3A" },
   { name: "Priya K.", niche: "Fashion", handle: "@priyastyle", flw: "155K", bg: "#F3E8FF", tc: "#7C3AED" },
   { name: "Dev P.", niche: "Home", handle: "@devdecors", flw: "92K", bg: "#E0F7FA", tc: "#00838F" },
@@ -321,6 +486,37 @@ const FAQS = [
 ];
 
 // ─── COMPONENTS ───
+
+function FAQItem({ faq }: any) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-all">
+      <button 
+        onClick={() => setOpen(!open)}
+        className="w-full p-6 flex items-center justify-between text-left"
+      >
+        <span className="text-lg font-bold text-slate-900">{faq.q}</span>
+        <div className={`w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center transition-transform ${open ? "rotate-180" : ""}`}>
+          <ChevronDown className="w-4 h-4 text-slate-400" />
+        </div>
+      </button>
+      <AnimatePresence>
+        {open && (
+          <motion.div 
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="overflow-hidden"
+          >
+            <div className="px-6 pb-6 text-slate-600 leading-relaxed">
+              {faq.a}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
 
 function Counter({ target }: { target: string }) {
   const num = parseFloat(target.replace(/[^\d.]/g, ""));
@@ -381,11 +577,11 @@ function Label({ children }: { children: React.ReactNode }) {
 function Logo({ onClick }: { onClick?: () => void }) {
   return (
     <div className="flex items-center gap-3 cursor-pointer group" onClick={onClick}>
-      <div className="relative w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center shrink-0 bg-white border border-slate-100 shadow-sm group-hover:scale-105 transition-transform">
+      <div className="relative w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center shrink-0 bg-white border border-brand/10 shadow-sm group-hover:scale-105 transition-transform">
         <img 
           src="https://scontent.fpnq6-1.fna.fbcdn.net/v/t39.30808-6/590807351_122098733535148525_6374173426190407819_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=YWd0pszrpOIQ7kNvwFvw5g5&_nc_oc=Adl6cy4OOqlK60YqoFVzNr7Ib5z62m_4OV-ohCZjo-EeACyz7b6KjY3u4AFadLTkrbe_puQ5YviyDMBYx1jPw5hR&_nc_zt=23&_nc_ht=scontent.fpnq6-1.fna&_nc_gid=Y4Lk2C39or5wJ64llBK4oQ&_nc_ss=8&oh=00_AfyJVvlO-YNMyODvVzylTW41Hmsem4op57x0j5y_dQQVog&oe=69C050D3" 
           alt="Brand Propel Studio" 
-          className="w-full h-full object-contain p-1"
+          className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
           onError={(e) => {
             e.currentTarget.style.display = 'none';
@@ -476,14 +672,14 @@ function Navbar({ page, handleNav, scrolled }: { page: string, handleNav: (p: st
 
       <div className="flex gap-3 items-center">
         <button 
-          className="hidden sm:flex px-5 py-2 rounded-lg bg-brand text-white text-xs font-bold hover:bg-brand-dark transition-all shadow-lg shadow-brand/10"
+          className="hidden lg:flex px-5 py-2 rounded-lg bg-brand text-white text-xs font-bold hover:bg-brand-dark transition-all shadow-lg shadow-brand/10"
           onClick={() => handleNav("contact")}
         >
           Book Free Audit
         </button>
         <button 
           className="hidden sm:flex px-5 py-2 rounded-lg border-2 border-brand text-brand text-xs font-bold hover:bg-brand-light transition-all"
-          onClick={() => handleNav("influencer")}
+          onClick={() => handleNav("influencer-join")}
         >
           Join as an Influencer
         </button>
@@ -506,15 +702,37 @@ function Navbar({ page, handleNav, scrolled }: { page: string, handleNav: (p: st
               <button onClick={() => setIsOpen(false)}><X className="text-slate-900" /></button>
             </div>
             <div className="flex flex-col gap-4 mt-8">
-              {["Home", "Blogs", "Contact"].map(item => (
+              {["Home", "Case Studies", "Blogs", "Contact"].map(item => (
                 <button 
                   key={item} 
                   className="text-2xl font-bold text-slate-900 text-left"
-                  onClick={() => { handleNav(item.toLowerCase(), item.toLowerCase()); setIsOpen(false); }}
+                  onClick={() => { 
+                    if (item === "Home") {
+                      handleNav("home", "home");
+                    } else {
+                      const p = item.toLowerCase().replace(" ", "-");
+                      handleNav(p); 
+                    }
+                    setIsOpen(false); 
+                  }}
                 >
                   {item}
                 </button>
               ))}
+              <div className="flex flex-col gap-3 mt-4">
+                <button 
+                  className="w-full py-4 rounded-xl bg-brand text-white font-bold text-center"
+                  onClick={() => { handleNav("contact"); setIsOpen(false); }}
+                >
+                  Book Free Audit
+                </button>
+                <button 
+                  className="w-full py-4 rounded-xl border-2 border-brand text-brand font-bold text-center"
+                  onClick={() => { handleNav("influencer"); setIsOpen(false); }}
+                >
+                  Join as an Influencer
+                </button>
+              </div>
               <div className="h-px bg-slate-100 my-2" />
               <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Services</div>
               {[
@@ -601,8 +819,18 @@ function Foot({ handleNav }: { handleNav: (p: string, s?: string) => void }) {
       <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
         <span className="text-xs text-slate-600">© 2025 Brand Propel Studio. All rights reserved. Made with love in India</span>
         <div className="flex gap-6">
-          {["Privacy Policy", "Terms", "Refund Policy"].map(l => (
-            <button key={l} className="text-xs text-slate-600 hover:text-slate-400 transition-colors">{l}</button>
+          {[
+            { l: "Privacy Policy", p: "privacy" },
+            { l: "Terms", p: "terms" },
+            { l: "Refund Policy", p: "refund" }
+          ].map(item => (
+            <button 
+              key={item.l} 
+              onClick={() => handleNav(item.p)}
+              className="text-xs text-slate-600 hover:text-slate-400 transition-colors"
+            >
+              {item.l}
+            </button>
           ))}
         </div>
       </div>
@@ -688,7 +916,7 @@ function ClientLogos() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10">
           <Label>Trusted by Growing Brands</Label>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Trusted by Growing Brands</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight">Trusted by Growing Brands</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
           {CLIENTS.map((c, i) => (
@@ -707,7 +935,7 @@ function Testimonials() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10">
           <Label>Client Success Stories</Label>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">Verified Reviews from Clutch</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight mb-4">Verified Reviews from Clutch</h2>
           <div className="flex items-center justify-center gap-2 text-brand font-bold">
             <Star className="w-5 h-5 fill-current" />
             <span>4.9/5.0 Average Rating</span>
@@ -839,7 +1067,7 @@ function Home({ setPage }: { setPage: (p: string) => void }) {
   return (
     <>
       {/* HERO */}
-      <section id="home" ref={heroRef as any} className="min-h-screen flex items-center bg-gradient-to-br from-brand-light via-white to-[#F2F5FF] px-[5%] pt-20 pb-12 relative overflow-hidden">
+      <section id="home" ref={heroRef as any} className="min-h-screen flex items-center bg-gradient-to-br from-brand-light via-white to-[#F2F5FF] px-[5%] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute right-[-200px] top-[5%] w-[700px] h-[700px] rounded-full bg-radial-gradient from-brand/5 to-transparent pointer-events-none" />
         
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center z-10">
@@ -860,7 +1088,7 @@ function Home({ setPage }: { setPage: (p: string) => void }) {
               initial={{ opacity: 0, y: 20 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-[clamp(38px,5.5vw,72px)] font-extrabold leading-[1.05] tracking-tight text-slate-900 mb-6"
+              className="text-[clamp(38px,5.5vw,72px)] font-display font-extrabold leading-[1.05] tracking-tight text-slate-900 mb-6"
             >
               Content That <span className="text-brand">Connects.</span><br />
               Ads That <span className="text-brand">Convert.</span><br />
@@ -895,7 +1123,8 @@ function Home({ setPage }: { setPage: (p: string) => void }) {
               className="flex flex-wrap gap-4 mb-12"
             >
               <button className="px-8 py-4 rounded-xl bg-brand text-white font-bold text-lg hover:bg-brand-dark shadow-xl shadow-brand/20 transition-all" onClick={() => setPage("contact")}>Start Scaling Today</button>
-              <button className="px-8 py-4 rounded-xl border-2 border-brand text-brand font-bold text-lg hover:bg-brand-light transition-all" onClick={() => setPage("work")}>View Case Studies</button>
+              <button className="px-8 py-4 rounded-xl border-2 border-brand text-brand font-bold text-lg hover:bg-brand-light transition-all" onClick={() => setPage("case-studies")}>View Case Studies</button>
+              <button className="px-8 py-4 rounded-xl bg-slate-900 text-white font-bold text-lg hover:bg-slate-800 shadow-xl shadow-slate-900/20 transition-all" onClick={() => setPage("influencer-join")}>Join as Influencer</button>
             </motion.div>
 
             <motion.div 
@@ -996,7 +1225,7 @@ function Home({ setPage }: { setPage: (p: string) => void }) {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Label>The Propel Advantage</Label>
-            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
+            <h2 className="text-3xl md:text-5xl font-display font-extrabold tracking-tight text-slate-900 mb-4">
               Why Brands Choose Us Over <span className="text-brand">Traditional Agencies</span>
             </h2>
             <p className="text-lg text-slate-500 max-w-2xl mx-auto">
@@ -1026,13 +1255,13 @@ function Home({ setPage }: { setPage: (p: string) => void }) {
       </section>
 
       {/* SERVICES */}
-      <section id="services" ref={svcRef as any} className="py-8 px-[5%] bg-white">
-        <div className="text-center mb-10">
+      <section id="services" ref={svcRef as any} className="py-24 px-[5%] bg-white">
+        <div className="text-center mb-16">
           <Label>What We Do</Label>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={svcInView ? { opacity: 1, y: 0 } : {}}
-            className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4"
+            className="text-3xl md:text-5xl font-display font-extrabold tracking-tight text-slate-900 mb-4"
           >
             One Studio. Every Growth Channel.
           </motion.h2>
@@ -1070,19 +1299,19 @@ function Home({ setPage }: { setPage: (p: string) => void }) {
       </section>
 
       {/* CASE STUDIES */}
-      <section id="work" ref={workRef as any} className="py-8 px-[5%] bg-slate-50">
-        <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-10">
+      <section id="work" ref={workRef as any} className="py-24 px-[5%] bg-slate-50">
+        <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
           <div>
             <Label>Our Work</Label>
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               animate={workInView ? { opacity: 1, y: 0 } : {}}
-              className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900"
+              className="text-3xl md:text-5xl font-display font-extrabold tracking-tight text-slate-900"
             >
               Numbers That Matter.
             </motion.h2>
           </div>
-          <button className="px-6 py-3 rounded-xl border-2 border-brand text-brand font-bold hover:bg-brand-light transition-all" onClick={() => setPage("work")}>See All Case Studies</button>
+          <button className="px-6 py-3 rounded-xl border-2 border-brand text-brand font-bold hover:bg-brand-light transition-all" onClick={() => setPage("case-studies")}>See All Case Studies</button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -1094,10 +1323,10 @@ function Home({ setPage }: { setPage: (p: string) => void }) {
               transition={{ delay: i * 0.1 }}
               className="p-8 rounded-2xl bg-white border border-slate-100 hover:shadow-xl transition-all group"
             >
-              <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4" style={{ backgroundColor: w.bg, color: w.col }}>{w.cat}</span>
-              <h3 className="text-lg font-bold text-slate-900 mb-2">{w.brand}</h3>
-              <div className="text-3xl font-extrabold mb-2" style={{ color: w.col }}>{w.result}</div>
-              <p className="text-xs text-slate-500 leading-relaxed">{w.sub}</p>
+              <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4" style={{ backgroundColor: w.bg, color: w.col }}>{w.industry}</span>
+              <h3 className="text-lg font-bold text-slate-900 mb-2">{w.title}</h3>
+              <div className="text-3xl font-extrabold mb-2" style={{ color: w.col }}>{w.results[0].value}</div>
+              <p className="text-xs text-slate-500 leading-relaxed">{w.subtitle}</p>
             </motion.div>
           ))}
         </div>
@@ -1219,16 +1448,16 @@ function Home({ setPage }: { setPage: (p: string) => void }) {
       </section>
 
       {/* PROCESS */}
-      <section id="process" ref={processRef as any} className="py-8 px-[5%] bg-slate-900 text-white overflow-hidden relative">
+      <section id="process" ref={processRef as any} className="py-24 px-[5%] bg-slate-900 text-white overflow-hidden relative">
         <div className="absolute left-[-10%] bottom-[-10%] w-[40%] aspect-square rounded-full bg-brand/10 blur-[120px]" />
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
           <div>
             <Label>How We Work</Label>
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               animate={processInView ? { opacity: 1, y: 0 } : {}}
-              className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6"
+              className="text-3xl md:text-5xl font-display font-extrabold tracking-tight mb-6"
             >
               Our Proven <span className="text-brand">5-Step</span> System
             </motion.h2>
@@ -1267,11 +1496,211 @@ function Home({ setPage }: { setPage: (p: string) => void }) {
 
 
 
+      {/* FEATURED CREATORS */}
+      <section className="py-24 px-[5%] bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <Label>Featured Talent</Label>
+            <h2 className="text-3xl md:text-5xl font-display font-extrabold tracking-tight text-slate-900 mb-4">
+              Creators Who <span className="text-brand">Deliver Results</span>
+            </h2>
+            <p className="text-lg text-slate-500 max-w-2xl mx-auto">
+              Meet some of the top creators in our network who are helping brands scale through authentic content.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            {CREATORS.map((c, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className="p-6 rounded-3xl text-center group hover:-translate-y-2 transition-all"
+                style={{ backgroundColor: c.bg }}
+              >
+                <div className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl font-bold text-white shadow-lg" style={{ backgroundColor: c.tc }}>
+                  {c.name[0]}
+                </div>
+                <div className="font-bold text-slate-900 text-sm mb-1">{c.name}</div>
+                <div className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: c.tc }}>{c.niche}</div>
+                <div className="text-[10px] font-medium text-slate-500">{c.flw} Followers</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQS */}
+      <section className="py-24 px-[5%] bg-slate-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <Label>Got Questions?</Label>
+            <h2 className="text-3xl md:text-5xl font-display font-extrabold tracking-tight text-slate-900 mb-4">
+              Frequently Asked <span className="text-brand">Questions</span>
+            </h2>
+          </div>
+          
+          <div className="space-y-4">
+            {FAQS.map((faq, i) => (
+              <FAQItem key={i} faq={faq} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA BAND */}
       <Testimonials />
 
       <CTABand setPage={setPage} />
     </>
+  );
+}
+
+function InfluencerJoinPage() {
+  const [form, setForm] = useState({ name: "", email: "", handle: "", niche: "", followers: "", msg: "" });
+  const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async () => {
+    setError("");
+    if (!form.name || !form.email || !form.handle) {
+      setError("Name, Email and Social Handle are required fields.");
+      return;
+    }
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          service_id: (import.meta as any).env.VITE_EMAILJS_SERVICE_ID,
+          template_id: (import.meta as any).env.VITE_EMAILJS_TEMPLATE_ID,
+          user_id: (import.meta as any).env.VITE_EMAILJS_PUBLIC_KEY,
+          template_params: {
+            from_name: form.name,
+            from_email: form.email,
+            influencer_handle: form.handle,
+            niche: form.niche,
+            followers: form.followers,
+            message: form.msg,
+            to_name: "Brand Propel Studio",
+          },
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send application");
+      }
+      
+      setSent(true);
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      setError("Failed to send application. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="pt-32 pb-24 px-[5%] bg-slate-50 min-h-screen">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+          <div>
+            <Label>Join Our Network</Label>
+            <h1 className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tight mb-8">Work with India's <span className="text-brand">Top Brands.</span></h1>
+            <p className="text-lg text-slate-600 leading-relaxed mb-12">We are always looking for authentic creators who can tell powerful stories. Join our network of 500+ influencers and get access to exclusive brand deals.</p>
+            
+            <div className="flex flex-col gap-8">
+              {[
+                { ic: <Star className="w-5 h-5" />, l: "Exclusive Deals", v: "Access to top D2C brands" },
+                { ic: <Zap className="w-5 h-5" />, l: "Fast Payments", v: "Transparent and timely payouts" },
+                { ic: <Sparkles className="w-5 h-5" />, l: "Creative Support", v: "Briefs that help you shine" }
+              ].map((item, i) => (
+                <div key={i} className="flex gap-5 items-start">
+                  <div className="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center text-brand shrink-0">{item.ic}</div>
+                  <div>
+                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">{item.l}</div>
+                    <div className="text-lg font-bold text-slate-900">{item.v}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl shadow-slate-200/50">
+            {sent ? (
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="text-center py-12"
+              >
+                <div className="w-20 h-20 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-6">
+                  <CheckCircle2 className="w-10 h-10" />
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Application Received!</h3>
+                <p className="text-slate-500">Our talent team will review your profile and reach out soon.</p>
+              </motion.div>
+            ) : (
+              <div className="flex flex-col gap-4">
+                {error && (
+                  <div className="bg-red-50 border border-red-100 text-red-600 px-4 py-3 rounded-xl text-sm font-medium mb-2">
+                    {error}
+                  </div>
+                )}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <input className={`w-full bg-slate-50 border ${error && !form.name ? 'border-red-300' : 'border-slate-200'} rounded-xl px-4 py-3 text-sm focus:border-brand outline-none transition-all`} placeholder="Your Name *" value={form.name} onChange={e => setForm({...form, name: e.target.value})} />
+                  <input className={`w-full bg-slate-50 border ${error && !form.email ? 'border-red-300' : 'border-slate-200'} rounded-xl px-4 py-3 text-sm focus:border-brand outline-none transition-all`} placeholder="Email Address *" value={form.email} onChange={e => setForm({...form, email: e.target.value})} />
+                </div>
+
+                <input className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:border-brand outline-none transition-all" placeholder="Social Media Handle (Instagram/YouTube) *" value={form.handle} onChange={e => setForm({...form, handle: e.target.value})} />
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <select className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:border-brand outline-none transition-all appearance-none" value={form.niche} onChange={e => setForm({...form, niche: e.target.value})}>
+                    <option value="">Primary Niche</option>
+                    <option>Beauty & Fashion</option>
+                    <option>Fitness & Health</option>
+                    <option>Tech & Gadgets</option>
+                    <option>Food & Lifestyle</option>
+                    <option>Gaming</option>
+                    <option>Other</option>
+                  </select>
+                  <select className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:border-brand outline-none transition-all appearance-none" value={form.followers} onChange={e => setForm({...form, followers: e.target.value})}>
+                    <option value="">Follower Count</option>
+                    <option>Under 10k</option>
+                    <option>10k - 50k</option>
+                    <option>50k - 100k</option>
+                    <option>100k - 500k</option>
+                    <option>500k+</option>
+                  </select>
+                </div>
+
+                <textarea className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:border-brand outline-none transition-all h-32 resize-none" placeholder="Tell us more about yourself and your content style..." value={form.msg} onChange={e => setForm({...form, msg: e.target.value})} />
+
+                <button 
+                  className="w-full py-4 rounded-xl bg-brand text-white font-bold hover:bg-brand-dark shadow-xl shadow-brand/20 transition-all mt-4 disabled:opacity-50"
+                  onClick={handleSubmit}
+                  disabled={loading}
+                >
+                  {loading ? "Submitting..." : "Submit Application"}
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -1303,9 +1732,9 @@ function ContactPage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          service_id: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-          template_id: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-          user_id: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          service_id: (import.meta as any).env.VITE_EMAILJS_SERVICE_ID,
+          template_id: (import.meta as any).env.VITE_EMAILJS_TEMPLATE_ID,
+          user_id: (import.meta as any).env.VITE_EMAILJS_PUBLIC_KEY,
           template_params: {
             from_name: form.name,
             from_email: form.email,
@@ -1331,12 +1760,12 @@ function ContactPage() {
   };
 
   return (
-    <div id="contact" className="pt-24 pb-16 px-[5%] bg-slate-50 min-h-screen">
+    <div id="contact" className="pt-32 pb-24 px-[5%] bg-slate-50 min-h-screen">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
             <Label>Get In Touch</Label>
-            <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-8">Let's Build Something <span className="text-brand">Powerful.</span></h1>
+            <h1 className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tight mb-8">Let's Build Something <span className="text-brand">Powerful.</span></h1>
             <p className="text-lg text-slate-600 leading-relaxed mb-12">Whether you are a D2C startup or an established brand — we will give you a free audit, honest advice and a clear roadmap for growth.</p>
             
             <div className="flex flex-col gap-8">
@@ -1437,9 +1866,9 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          service_id: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-          template_id: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-          user_id: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          service_id: (import.meta as any).env.VITE_EMAILJS_SERVICE_ID,
+          template_id: (import.meta as any).env.VITE_EMAILJS_TEMPLATE_ID,
+          user_id: (import.meta as any).env.VITE_EMAILJS_PUBLIC_KEY,
           template_params: {
             from_name: form.name,
             from_email: form.email,
@@ -1466,7 +1895,7 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
   const categories = [
     { t: "Beauty & Fashion", d: "150+ Creators", ic: "💄", col: "#C42D5A", bg: "#FFE4EC" },
     { t: "Tech & Gadgets", d: "80+ Creators", ic: "📱", col: "#0A72B8", bg: "#E4F5FF" },
-    { t: "Food & Lifestyle", d: "120+ Creators", ic: "🍕", col: "#B85C00", bg: "#FFF3E0" },
+    { t: "Food & Lifestyle", d: "120+ Creators", ic: "🍕", col: "#1E429F", bg: "#F3F7FF" },
     { t: "Fitness & Health", d: "95+ Creators", ic: "💪", col: "#1B7A3A", bg: "#E8F5E9" },
     { t: "Travel & Decor", d: "60+ Creators", ic: "✈️", col: "#00838F", bg: "#E0F7FA" },
     { t: "Gaming & Entertainment", d: "110+ Creators", ic: "🎮", col: "#7C3AED", bg: "#F3E8FF" },
@@ -1477,8 +1906,8 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
       {/* HERO */}
       <section ref={heroRef as any} className="pt-32 pb-20 px-[5%] bg-slate-950 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#FF6321_0%,transparent_50%)] opacity-10" />
-          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_80%,#FF6321_0%,transparent_50%)] opacity-10" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#1A56DB_0%,transparent_50%)] opacity-10" />
+          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_80%_80%,#1A56DB_0%,transparent_50%)] opacity-10" />
         </div>
         
         <div className="max-w-7xl mx-auto relative z-10">
@@ -1497,10 +1926,10 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
                 initial={{ opacity: 0, y: 30 }}
                 animate={heroInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 }}
-                className="text-5xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-[0.9]"
+                className="text-5xl md:text-8xl font-display font-extrabold tracking-tighter mb-8 leading-[0.9]"
               >
                 The Future of <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-orange-400">Influence is AI.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-blue-400">Influence is AI.</span>
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -1570,7 +1999,7 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
               
               {/* Decorative Glow */}
               <div className="absolute -top-20 -right-20 w-64 h-64 bg-brand/20 rounded-full blur-[100px] -z-10" />
-              <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-orange-500/10 rounded-full blur-[100px] -z-10" />
+              <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-500/10 rounded-full blur-[100px] -z-10" />
             </motion.div>
           </div>
         </div>
@@ -1588,7 +2017,7 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
                 <Sparkles className="w-5 h-5" />
                 <span className="text-xs font-bold uppercase tracking-widest">Virtual Creators</span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-extrabold text-white tracking-tighter leading-none">Meet Our <span className="text-slate-500 italic serif">AI Influencers</span></h2>
+              <h2 className="text-4xl md:text-6xl font-display font-extrabold text-white tracking-tighter leading-none">Meet Our <span className="text-slate-500 italic font-serif">AI Influencers</span></h2>
             </div>
             <p className="text-slate-400 max-w-sm text-sm leading-relaxed">
               Infinite scalability. 24/7 engagement. Zero drama. Our AI creators are built to represent your brand values perfectly across every platform.
@@ -1633,7 +2062,7 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <Label>AI-Generated Content</Label>
-            <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tighter">Viral <span className="text-brand">AI Reels</span> & Content</h2>
+            <h2 className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tighter">Viral <span className="text-brand">AI Reels</span> & Content</h2>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -1673,7 +2102,7 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
                 <Sparkles className="w-5 h-5" />
                 <span className="text-xs font-bold uppercase tracking-widest">Live AI Demo</span>
               </div>
-              <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">Generate Your <span className="text-brand">AI Creator</span></h2>
+              <h2 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight mb-6">Generate Your <span className="text-brand">AI Creator</span></h2>
               <p className="text-slate-500 mb-10 leading-relaxed">Experience the power of our proprietary AI engine. Describe your ideal influencer and watch our system generate a persona in seconds.</p>
               
               <AIContentDemo />
@@ -1692,7 +2121,7 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
             { n: "10,000+", l: "Campaigns" }
           ].map((s, i) => (
             <div key={i} className="text-center text-white">
-              <div className="text-3xl md:text-5xl font-extrabold mb-1">{s.n}</div>
+              <div className="text-3xl md:text-5xl font-display font-extrabold mb-1">{s.n}</div>
               <div className="text-xs font-bold text-white/60 uppercase tracking-widest">{s.l}</div>
             </div>
           ))}
@@ -1704,7 +2133,7 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <Label>Our Network</Label>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Creators for Every Niche</h2>
+            <h2 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight">Creators for Every Niche</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {categories.map((c, i) => (
@@ -1735,7 +2164,7 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
           <div className="absolute right-0 top-0 w-1/2 h-full bg-white/5 -skew-x-12 translate-x-1/4" />
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tighter">Are You a Creator? <br /><span className="text-white/80">Join the Elite.</span></h2>
+              <h2 className="text-4xl md:text-6xl font-display font-extrabold mb-6 tracking-tighter">Are You a Creator? <br /><span className="text-white/80">Join the Elite.</span></h2>
               <p className="text-lg text-white/70 mb-8 max-w-md">Get exclusive access to top brands, transparent payments, and dedicated support to grow your personal brand.</p>
               <div className="flex flex-col gap-4">
                 {["Direct Brand Deals", "Timely Payments", "Growth Support"].map((f, i) => (
@@ -1784,7 +2213,7 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <Label>High-Converting Formats</Label>
-              <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tighter mb-8 leading-tight">Content That <span className="text-brand">Builds Desire</span></h2>
+              <h2 className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tighter mb-8 leading-tight">Content That <span className="text-brand">Builds Desire</span></h2>
               <div className="space-y-8">
                 <div className="flex gap-6">
                   <div className="w-12 h-12 rounded-2xl bg-brand/10 flex items-center justify-center shrink-0">
@@ -1827,12 +2256,12 @@ function InfluencerPage({ setPage }: { setPage: (p: string) => void }) {
 
 function CTABand({ setPage }: { setPage: (p: string) => void }) {
   return (
-    <section className="py-12 px-[5%] bg-gradient-to-br from-brand to-brand-dark text-center relative overflow-hidden">
+    <section className="py-24 px-[5%] bg-gradient-to-br from-brand to-brand-dark text-center relative overflow-hidden">
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "32px 32px" }} />
       
       <div className="relative z-10">
         <div className="text-xs font-bold text-white/60 uppercase tracking-widest mb-4">Free Consultation — No Commitments</div>
-        <h2 className="text-3xl md:text-6xl font-extrabold text-white tracking-tight mb-6">Ready to Propel Your Brand?</h2>
+        <h2 className="text-3xl md:text-6xl font-display font-extrabold text-white tracking-tight mb-6">Ready to Propel Your Brand?</h2>
         <p className="text-lg text-white/70 max-w-lg mx-auto mb-10">Book a free 30-min strategy call. We will show you exactly where you are leaving money on the table.</p>
         
         <div className="flex flex-wrap justify-center gap-4">
@@ -1885,7 +2314,7 @@ function SkincareAISection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <Label>AI Creative Studio</Label>
-          <h2 className="text-4xl md:text-7xl font-extrabold tracking-tighter mb-6">Generate <span className="text-brand">Brand Content</span> with AI</h2>
+          <h2 className="text-4xl md:text-7xl font-display font-extrabold tracking-tighter mb-6">Generate <span className="text-brand">Brand Content</span> with AI</h2>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">Instant unboxing reels and professional product photos for skincare, makeup, and fashion. No studio needed.</p>
         </div>
 
@@ -1989,7 +2418,7 @@ function AIAdvertisingShowcase() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
             <Label>Campaign Gallery</Label>
-            <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tighter mb-6">AI-Generated <span className="text-brand">Advertising Gallery</span></h2>
+            <h2 className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tighter mb-6">AI-Generated <span className="text-brand">Advertising Gallery</span></h2>
             <p className="text-slate-500 text-lg">Hyper-realistic AI creators delivering high-impact advertising for global makeup and clothing brands.</p>
           </div>
           <div className="flex gap-4">
@@ -2048,7 +2477,7 @@ function AIInfluencerGallery() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <Label>AI Influencer Studio</Label>
-          <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tighter mb-6">AI-Generated <span className="text-brand">Influencer Avatars</span></h2>
+          <h2 className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tighter mb-6">AI-Generated <span className="text-brand">Influencer Avatars</span></h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg">Scale your influencer marketing with hyper-realistic AI avatars tailored to your brand's aesthetic.</p>
         </div>
 
@@ -2156,55 +2585,189 @@ function AIContentDemo() {
   );
 }
 
-function CaseStudiesPage() {
+function CaseStudiesPage({ setPage }: { setPage: (p: string) => void }) {
   return (
-    <div className="pt-24 pb-16 px-[5%] bg-slate-50 min-h-screen">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <Label>Our Impact</Label>
-          <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">Real Results for <span className="text-brand">Real Brands.</span></h1>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">Explore how we've helped companies across various industries scale their digital presence and achieve measurable growth.</p>
+    <div className="pt-32 pb-24 bg-slate-50 min-h-screen">
+      {/* HEADER */}
+      <section className="py-20 px-[5%] bg-white border-b border-slate-100">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="text-brand font-black text-sm uppercase tracking-[0.3em] mb-4">Brand Propel Studio</div>
+          <div className="text-slate-400 font-bold text-xs uppercase tracking-widest mb-8">India's Leading UGC & Performance Marketing Agency</div>
+          <h1 className="text-5xl md:text-8xl font-display font-black text-slate-900 tracking-tighter mb-6 leading-none">CLIENT SUCCESS <br /><span className="text-brand">CASE STUDIES</span></h1>
+          <p className="text-2xl font-bold text-slate-600 mb-12 italic font-serif">Real Results. Proven Strategy. Measurable Growth.</p>
+          
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+            <span>D2C Beauty</span>
+            <span className="text-brand">•</span>
+            <span>Fitness & Wellness</span>
+            <span className="text-brand">•</span>
+            <span>EdTech</span>
+            <span className="text-brand">•</span>
+            <span>Home & Lifestyle</span>
+          </div>
         </div>
+      </section>
 
-        <div className="grid grid-cols-1 gap-12">
-          {CASE_STUDIES.map((cs, i) => (
-            <motion.div 
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-[32px] overflow-hidden border border-slate-100 shadow-xl shadow-slate-200/50 flex flex-col lg:flex-row"
-            >
-              <div className="lg:w-1/3 p-12 flex flex-col justify-center" style={{ backgroundColor: cs.bg }}>
-                <div className="text-[10px] font-bold uppercase tracking-[0.2em] mb-4" style={{ color: cs.col }}>{cs.cat}</div>
-                <h2 className="text-3xl font-black text-slate-900 mb-2">{cs.brand}</h2>
-                <div className="text-xl font-bold text-brand mb-6">{cs.result}</div>
-                <div className="h-1 w-12 rounded-full" style={{ backgroundColor: cs.col }} />
+      {/* CASE STUDIES LIST */}
+      <div className="max-w-6xl mx-auto px-[5%] py-20 space-y-32">
+        {CASE_STUDIES.map((cs, i) => (
+          <motion.div 
+            key={cs.id}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            {/* CASE STUDY HEADER */}
+            <div className="flex flex-col md:flex-row justify-between items-baseline mb-12 border-b-2 border-slate-900 pb-6">
+              <div>
+                <div className="text-brand font-black text-sm uppercase tracking-widest mb-2">CASE STUDY {cs.id}</div>
+                <h2 className="text-4xl md:text-6xl font-display font-black text-slate-900 tracking-tighter leading-none mb-4">{cs.title}</h2>
+                <p className="text-xl font-bold text-slate-500 max-w-2xl">{cs.subtitle}</p>
               </div>
-              <div className="lg:w-2/3 p-12 flex flex-col justify-center">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">{cs.sub}</h3>
-                <p className="text-slate-600 leading-relaxed mb-8">{cs.desc}</p>
-                <div className="flex flex-wrap gap-4">
-                  {["Strategy", "Execution", "Optimization"].map(tag => (
-                    <span key={tag} className="px-4 py-1.5 rounded-full bg-slate-50 text-slate-500 text-[10px] font-bold uppercase tracking-widest border border-slate-100">{tag}</span>
-                  ))}
+            </div>
+
+            {/* METADATA GRID */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+              <div>
+                <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Industry</div>
+                <div className="font-bold text-slate-900">{cs.industry}</div>
+              </div>
+              <div>
+                <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Duration</div>
+                <div className="font-bold text-slate-900">{cs.duration}</div>
+              </div>
+              <div>
+                <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Services</div>
+                <div className="font-bold text-slate-900">{cs.services}</div>
+              </div>
+              <div>
+                <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Market</div>
+                <div className="font-bold text-slate-900">{cs.market}</div>
+              </div>
+            </div>
+
+            {/* CONTENT GRID */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+              {/* LEFT COLUMN: CHALLENGE & STRATEGY */}
+              <div className="lg:col-span-8 space-y-16">
+                {/* CHALLENGE */}
+                <div>
+                  <h3 className="inline-block px-4 py-1 bg-slate-900 text-white text-xs font-bold uppercase tracking-widest mb-6">The Challenge</h3>
+                  <p className="text-lg text-slate-600 leading-relaxed mb-8">{cs.challenge.text}</p>
+                  <ul className="space-y-4">
+                    {cs.challenge.bullets.map((b, idx) => (
+                      <li key={idx} className="flex gap-4 items-start text-slate-700 font-medium">
+                        <span className="text-brand mt-1">▸</span>
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* STRATEGY */}
+                <div>
+                  <h3 className="inline-block px-4 py-1 bg-slate-900 text-white text-xs font-bold uppercase tracking-widest mb-8">Our Strategy</h3>
+                  <div className="space-y-12">
+                    {cs.strategy.map((s, idx) => (
+                      <div key={idx}>
+                        <h4 className="text-xl font-black text-slate-900 mb-4">{s.phase}</h4>
+                        <ul className="space-y-3">
+                          {s.bullets.map((b, bIdx) => (
+                            <li key={bIdx} className="flex gap-4 items-start text-slate-600">
+                              <span className="text-brand mt-1">▸</span>
+                              {b}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </motion.div>
-          ))}
-        </div>
+
+              {/* RIGHT COLUMN: RESULTS & TESTIMONIAL */}
+              <div className="lg:col-span-4 space-y-12">
+                {/* RESULTS */}
+                <div className="bg-slate-900 rounded-[40px] p-10 text-white relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-brand/20 blur-3xl rounded-full -mr-16 -mt-16" />
+                  <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-brand mb-10">The Results</h3>
+                  <div className="space-y-10">
+                    {cs.results.map((r, idx) => (
+                      <div key={idx} className="border-b border-white/10 pb-6 last:border-0">
+                        <div className="text-4xl font-black mb-1">{r.value}</div>
+                        <div className="text-xs font-bold text-brand uppercase tracking-widest mb-1">{r.label}</div>
+                        <div className="text-[10px] text-white/50 font-medium">{r.sub}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* TESTIMONIAL */}
+                <div className="bg-white rounded-[40px] p-10 border border-slate-100 shadow-xl relative">
+                  <div className="text-4xl text-brand font-serif absolute top-6 left-6 opacity-20">"</div>
+                  <p className="text-lg text-slate-700 italic serif leading-relaxed mb-8 relative z-10">
+                    {cs.testimonial.quote}
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-1 w-1 bg-brand" />
+                    <div className="text-xs font-bold text-slate-900 uppercase tracking-widest leading-tight">
+                      {cs.testimonial.author}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
+
+      {/* FOOTER CTA */}
+      <section className="py-32 px-[5%] bg-white border-t border-slate-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-7xl font-display font-black text-slate-900 tracking-tighter mb-8 leading-none">READY TO WRITE YOUR <br /><span className="text-brand">SUCCESS STORY?</span></h2>
+          <p className="text-xl text-slate-500 mb-12 leading-relaxed">
+            Every brand you've read about in these pages started exactly where you are today. At Brand Propel Studio, we combine the power of authentic UGC content with precision performance marketing to deliver results that move the needle.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 text-left">
+            {[
+              { ic: "🎬", t: "UGC Production", d: "Creator-led authentic content at scale" },
+              { ic: "📈", t: "Performance Ads", d: "Meta, Google & YouTube campaigns" },
+              { ic: "🎯", t: "Full-Funnel Strategy", d: "From awareness to retention" }
+            ].map((f, i) => (
+              <div key={i} className="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                <div className="text-3xl mb-4">{f.ic}</div>
+                <h4 className="font-bold text-slate-900 mb-2">{f.t}</h4>
+                <p className="text-xs text-slate-500 leading-relaxed">{f.d}</p>
+              </div>
+            ))}
+          </div>
+
+          <button 
+            onClick={() => setPage("contact")}
+            className="px-12 py-6 rounded-full bg-brand text-white font-black text-xl hover:bg-brand-dark shadow-2xl shadow-brand/30 transition-all hover:scale-105 active:scale-95 mb-8"
+          >
+            Get a Free Strategy Consultation
+          </button>
+          
+          <div className="flex flex-col items-center gap-2 text-slate-400 font-bold text-[10px] uppercase tracking-widest">
+            <div>brandpropelstudio.com  |  hello@brandpropelstudio.com</div>
+            <div className="text-brand">India's Leading UGC & Performance Marketing Agency</div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
 
-function BlogsPage() {
+function BlogsPage({ setPage }: { setPage: (p: string) => void }) {
   const [ref, inView] = useInView(0.05);
   return (
-    <div className="min-h-screen pt-24 pb-16 px-[5%] bg-slate-50">
+    <div className="min-h-screen pt-32 pb-24 px-[5%] bg-slate-50">
       <div className="max-w-6xl mx-auto">
         <Label>Our Blog</Label>
-        <h1 className="text-4xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-12">Insights & <span className="text-brand">Case Studies</span></h1>
+        <h1 className="text-4xl md:text-7xl font-display font-extrabold text-slate-900 tracking-tight mb-12">Insights & <span className="text-brand">Case Studies</span></h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {BLOG_POSTS.map((post, i) => (
@@ -2222,7 +2785,10 @@ function BlogsPage() {
               <div className="p-8">
                 <div className="text-xs text-slate-400 font-bold mb-3">{post.date}</div>
                 <h3 className="text-xl font-bold text-slate-900 mb-6 group-hover:text-brand transition-colors">{post.title}</h3>
-                <button className="flex items-center gap-2 text-brand font-bold text-sm group-hover:gap-3 transition-all">
+                <button 
+                  onClick={() => setPage("contact")}
+                  className="flex items-center gap-2 text-brand font-bold text-sm group-hover:gap-3 transition-all"
+                >
                   Read More <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
@@ -2232,7 +2798,7 @@ function BlogsPage() {
 
         <div className="border-t border-slate-200 pt-20">
           <Label>Success Stories</Label>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-12">Detailed Case Studies</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight mb-12">Detailed Case Studies</h2>
           <div ref={ref as any} className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {CASE_STUDIES.map((cs, i) => (
               <motion.div 
@@ -2243,22 +2809,101 @@ function BlogsPage() {
                 className="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all flex flex-col md:flex-row"
               >
                 <div className="w-full md:w-1/3 aspect-square md:aspect-auto relative overflow-hidden">
-                  <img src={`https://picsum.photos/seed/cs${i}/400/400`} alt={cs.brand} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
+                  <img src={`https://picsum.photos/seed/cs${i}/400/400`} alt={cs.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
                 </div>
                 <div className="p-8 flex-1">
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-2xl font-bold text-slate-900">{cs.brand}</h3>
-                    <div className="px-3 py-1 rounded-lg bg-brand-light text-brand text-xs font-bold">{cs.result}</div>
+                    <h3 className="text-2xl font-bold text-slate-900">{cs.title}</h3>
+                    <div className="px-3 py-1 rounded-lg bg-brand-light text-brand text-xs font-bold">{cs.results[0].value}</div>
                   </div>
-                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">{cs.cat}</div>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6">{cs.sub}</p>
-                  <button className="flex items-center gap-2 text-brand font-bold text-sm group-hover:gap-3 transition-all">
+                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">{cs.industry}</div>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6">{cs.subtitle}</p>
+                  <button 
+                    onClick={() => setPage("case-studies")}
+                    className="flex items-center gap-2 text-brand font-bold text-sm group-hover:gap-3 transition-all"
+                  >
                     View Full Case Study <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>
               </motion.div>
             ))}
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function AboutPage({ setPage }: { setPage: (p: string) => void }) {
+  return (
+    <div className="min-h-screen pt-32 pb-20 px-[5%] bg-slate-50">
+      <div className="max-w-4xl mx-auto">
+        <Label>Our Story</Label>
+        <h1 className="text-5xl md:text-7xl font-display font-extrabold text-slate-900 mb-8 tracking-tight">
+          Scaling Brands with <span className="text-brand">Data & Creativity</span>
+        </h1>
+        <div className="prose prose-lg text-slate-600 max-w-none space-y-6">
+          <p className="text-xl font-medium text-slate-800">
+            Brand Propel Studio was founded on a simple premise: Most agencies are too slow, too expensive, and too disconnected from what actually sells.
+          </p>
+          <p>
+            We bridge the gap between high-end production and performance marketing. Our team of creators, media buyers, and strategists work in sync to deliver content that doesn't just look good—it converts.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+            <div className="p-8 bg-white rounded-3xl shadow-xl border border-slate-100">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Mission</h3>
+              <p>To empower e-commerce brands with the creative assets and strategic media buying they need to dominate their niche and scale profitably.</p>
+            </div>
+            <div className="p-8 bg-white rounded-3xl shadow-xl border border-slate-100">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Our Vision</h3>
+              <p>To be the #1 performance creative partner for high-growth brands globally, setting the standard for ROI-driven content.</p>
+            </div>
+          </div>
+          <p>
+            Since our inception, we've helped dozens of brands achieve record-breaking ROAS through our unique "Creative-First" approach to paid social. We don't just run ads; we build engines for growth.
+          </p>
+        </div>
+        <div className="mt-16 p-12 bg-brand rounded-[3rem] text-white text-center shadow-2xl shadow-brand/30">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to write your success story?</h2>
+          <button 
+            onClick={() => setPage("contact")}
+            className="px-10 py-5 bg-white text-brand font-black text-xl rounded-2xl hover:scale-105 transition-transform shadow-xl"
+          >
+            Work With Us
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PolicyPage({ type, setPage }: { type: 'privacy' | 'terms' | 'refund', setPage: (p: string) => void }) {
+  const content = {
+    privacy: {
+      title: "Privacy Policy",
+      text: "At Brand Propel Studio, we take your privacy seriously. This policy outlines how we collect, use, and protect your personal information when you use our services or visit our website. We collect information such as your name, email, and business details only to provide and improve our services. We never sell your data to third parties."
+    },
+    terms: {
+      title: "Terms of Service",
+      text: "By accessing our website or using our services, you agree to comply with these terms. Our services are provided 'as is,' and we make no warranties regarding specific outcomes, although we strive for excellence. All content produced by Brand Propel Studio remains our intellectual property until full payment is received."
+    },
+    refund: {
+      title: "Refund Policy",
+      text: "Due to the nature of creative and digital marketing services, we generally do not offer refunds once work has commenced. However, we are committed to your satisfaction and will work closely with you to ensure the final deliverables meet the agreed-upon brief. Specific refund terms may be outlined in individual service contracts."
+    }
+  }[type];
+
+  return (
+    <div className="min-h-screen pt-32 pb-20 px-[5%] bg-white">
+      <div className="max-w-3xl mx-auto">
+        <button onClick={() => setPage("home")} className="text-brand font-bold mb-8 flex items-center gap-2">
+          <ArrowRight className="w-4 h-4 rotate-180" /> Back to Home
+        </button>
+        <h1 className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 mb-8 tracking-tight">{content.title}</h1>
+        <div className="text-lg text-slate-600 leading-relaxed space-y-6">
+          <p>{content.text}</p>
+          <p>Last updated: March 20, 2026</p>
+          <p>If you have any questions regarding this policy, please contact us at hello@brandpropel.studio</p>
         </div>
       </div>
     </div>
@@ -2288,32 +2933,32 @@ function SvcPage({ svcId, setPage }: { svcId: string, setPage: (p: string) => vo
           <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-8 text-white shadow-xl" style={{ backgroundColor: svc.color }}>
             {svc.icon}
           </div>
-          <h1 className="text-4xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">{svc.title}</h1>
+          <h1 className="text-4xl md:text-7xl font-display font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">{svc.title}</h1>
           <p className="text-xl font-bold mb-6" style={{ color: svc.color }}>{svc.tagline}</p>
           <p className="text-lg text-slate-600 leading-relaxed max-w-2xl mb-10">{svc.short}</p>
           <div className="flex flex-wrap gap-4">
-            <button className="px-8 py-4 rounded-xl bg-brand text-white font-bold text-lg hover:bg-brand-dark shadow-xl shadow-brand/20 transition-all" onClick={() => setPage("contact")}>Get Started</button>
+            <button className="px-8 py-4 rounded-xl bg-brand text-white font-bold text-lg hover:bg-brand-dark shadow-xl shadow-brand/20 transition-all" onClick={() => setPage("influencer-join")}>Join as Influencer</button>
             <button className="px-8 py-4 rounded-xl border-2 border-brand text-brand font-bold text-lg hover:bg-brand-light transition-all" onClick={() => setPage("contact")}>Free Consultation</button>
           </div>
         </div>
       </section>
 
-      <section className="py-10 px-[5%]" style={{ backgroundColor: svc.color }}>
+      <section className="py-20 px-[5%]" style={{ backgroundColor: svc.color }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {svc.results.map((r, i) => (
             <div key={i} className="text-center py-8 border-b md:border-b-0 md:border-r border-white/20 last:border-0">
-              <div className="text-4xl md:text-6xl font-extrabold text-white mb-2">{r.n}</div>
+              <div className="text-4xl md:text-6xl font-display font-extrabold text-white mb-2">{r.n}</div>
               <div className="text-sm font-bold text-white/70 uppercase tracking-widest">{r.l}</div>
             </div>
           ))}
         </div>
       </section>
 
-      <section ref={ref as any} className="py-10 px-[5%] bg-white">
+      <section ref={ref as any} className="py-24 px-[5%] bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           <div>
             <Label>What is Included</Label>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-8">Everything You Need to <span style={{ color: svc.color }}>Succeed</span></h2>
+            <h2 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight mb-8">Everything You Need to <span style={{ color: svc.color }}>Succeed</span></h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-8">We provide a full-service experience, handling everything from strategy and creator sourcing to production and performance optimization.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -2350,7 +2995,7 @@ function SvcPage({ svcId, setPage }: { svcId: string, setPage: (p: string) => vo
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <Label>Ad Creative Showcase</Label>
-              <h2 className="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tighter">Product Demo <span className="text-brand">Ads in Action</span></h2>
+              <h2 className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tighter">Product Demo <span className="text-brand">Ads in Action</span></h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
@@ -2380,8 +3025,8 @@ function SvcPage({ svcId, setPage }: { svcId: string, setPage: (p: string) => vo
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div>
                 <Label>Highest-Converting Format</Label>
-                <h2 className="text-4xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-[0.9]">Problem-Solution <span className="text-brand">Ads</span></h2>
-                <p className="text-2xl font-bold text-white/80 mb-8 italic serif">"Hook with a problem, sell with your solution — the highest-converting format."</p>
+                <h2 className="text-4xl md:text-7xl font-display font-extrabold tracking-tighter mb-8 leading-[0.9]">Problem-Solution <span className="text-brand">Ads</span></h2>
+                <p className="text-2xl font-bold text-white/80 mb-8 italic font-serif">"Hook with a problem, sell with your solution — the highest-converting format."</p>
                 <p className="text-lg text-slate-400 leading-relaxed mb-10">We engineer content that identifies your customer's deepest pain points and positions your product as the only logical answer. This psychological framework consistently outperforms standard brand awareness content.</p>
                 <div className="space-y-4">
                   {["Pain Point Identification", "Solution Positioning", "Strong Call-to-Action"].map((step, i) => (
@@ -2459,8 +3104,13 @@ export default function App() {
       case "home": return <Home setPage={setPage} />;
       case "contact": return <ContactPage />;
       case "influencer": return <InfluencerPage setPage={setPage} />;
-      case "blogs": return <BlogsPage />;
-      case "case-studies": return <CaseStudiesPage />;
+      case "influencer-join": return <InfluencerJoinPage />;
+      case "blogs": return <BlogsPage setPage={setPage} />;
+      case "case-studies": return <CaseStudiesPage setPage={setPage} />;
+      case "about": return <AboutPage setPage={setPage} />;
+      case "privacy": return <PolicyPage type="privacy" setPage={setPage} />;
+      case "terms": return <PolicyPage type="terms" setPage={setPage} />;
+      case "refund": return <PolicyPage type="refund" setPage={setPage} />;
       default: return <Home setPage={setPage} />;
     }
   };

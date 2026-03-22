@@ -71,7 +71,7 @@ const CLIENTS = [
   },
   {
     name: "Qehhwa Cafe",
-    logo: "https://picsum.photos/seed/qehhwa/200/200",
+    logo: "https://scontent.fpnq27-1.fna.fbcdn.net/v/t39.30808-6/457448327_122105839754489987_154075907298600601_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=JS64Pzc5qRUQ7kNvwG5PdGx&_nc_oc=AdpPiSQ54yd2RN-lGqpfZouusOIJ4Ct8GN_y1JgHYIo4HmfcjVqYj1cIpHFzZFYnPG2ZYGyEv5D2ui_Mj8T-EcJR&_nc_zt=23&_nc_ht=scontent.fpnq27-1.fna&_nc_gid=FAQ65k57_Vd8lhmc8KvhQw&_nc_ss=7a32e&oh=00_AfwtLG4gIu3jqCyZqwZFeLcgVuTfhYg69NvsHbpxNOXi0A&oe=69C53D0E",
     url: "https://www.facebook.com/photo/?fbid=122094877352512302&set=a.122094872780512302"
   },
   { 
@@ -120,9 +120,9 @@ const CLIENTS = [
     url: "https://ameritechds.com/"
   },
   { 
-    name: "Oodlebit", 
-    logo: "https://www.airdropsmob.com/wp-content/uploads/2018/08/oodlebit-logo.jpg",
-    url: "https://oodlebit.com/"
+    name: "ReadySetBoom", 
+    logo: "https://readysetsecure.com/common/resources/images/logo/ReadySet4_Logo_280x50.png",
+    url: "https://readysetsecure.com/"
   }
 ];
 
@@ -181,6 +181,34 @@ const TESTIMONIALS = [
     text: "The migration from Magento to Shopify was seamless. Our site speed improved by 60%, and we saw an immediate 40% boost in organic sales thanks to their SEO efforts. Their team's knowledge of e-commerce best practices and technical SEO is second to none.", 
     avatar: "SB", 
     col: "#DC2626"
+  },
+  {
+    name: "Founder",
+    role: "D2C Skincare Brand | Facebook Review",
+    text: "We had tried three agencies before Brand Propel Studio. None of them understood UGC the way they do. Within the first month, we could see the difference — people were actually watching our ads till the end. The results speak for themselves.",
+    avatar: "DS",
+    col: "#1A56DB"
+  },
+  {
+    name: "Co-Founder",
+    role: "Fitness Supplements Brand | Facebook Review",
+    text: "The team at Brand Propel Studio didn't just run ads — they built us a machine. The UGC content they created became our best-performing assets across every single channel. We hit our 6-month target in month 5.",
+    avatar: "FS",
+    col: "#059669"
+  },
+  {
+    name: "Marketing Head",
+    role: "EdTech Platform | Facebook Review",
+    text: "The quality of leads completely transformed. Our sales team went from struggling to fill demo slots to having a waiting list. The student stories Brand Propel Studio captured were so powerful — we use them everywhere now, not just in ads.",
+    avatar: "EP",
+    col: "#7C3AED"
+  },
+  {
+    name: "Founder & CEO",
+    role: "Home & Lifestyle Brand | Facebook Review",
+    text: "We came to Brand Propel Studio with a dream and a tight budget. They made every rupee work. The UGC content they created made our brand look like it had been around for years. We went from zero to a brand people actually talk about — in five months.",
+    avatar: "HL",
+    col: "#F59E0B"
   }
 ];
 
@@ -935,7 +963,7 @@ function Testimonials() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10">
           <Label>Client Success Stories</Label>
-          <h2 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight mb-4">Verified Reviews from Clutch</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight mb-4">Verified Client Reviews</h2>
           <div className="flex items-center justify-center gap-2 text-brand font-bold">
             <Star className="w-5 h-5 fill-current" />
             <span>4.9/5.0 Average Rating</span>
@@ -969,7 +997,9 @@ function Testimonials() {
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
                   ))}
-                  <span className="ml-2 text-xs font-bold text-slate-400 uppercase tracking-widest">Verified Review</span>
+                  <span className="ml-2 text-xs font-bold text-slate-400 uppercase tracking-widest">
+                    {t.role.includes('Facebook') ? 'Facebook Review' : 'Clutch Review'}
+                  </span>
                 </div>
                 <p className="text-lg text-slate-700 leading-relaxed italic mb-8">"{t.text}"</p>
                 <div className="flex items-center gap-4">

@@ -64,7 +64,7 @@ export function ContactPage() {
           <div>
             <Label>Get In Touch</Label>
             <h1 className="text-4xl md:text-6xl font-display font-extrabold text-slate-900 tracking-tight mb-8">Let's Build Something <span className="text-brand">Powerful.</span></h1>
-            <p className="text-lg text-slate-600 leading-relaxed mb-12">Whether you are a D2C startup or an established brand — we will give you a free audit, honest advice and a clear roadmap for growth.</p>
+            <p className="text-lg text-slate-600 leading-relaxed mb-12">Whether you are a D2C startup or an established brand, we will give you a free audit, honest advice and a clear roadmap for growth.</p>
             
             <div className="flex flex-col gap-8">
               {[

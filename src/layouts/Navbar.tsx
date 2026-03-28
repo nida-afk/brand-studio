@@ -32,11 +32,10 @@ export function Navbar({ scrolled }: { scrolled: boolean }) {
                 className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-[600]"
               >
                 <div className="bg-white border border-slate-100 rounded-2xl shadow-2xl min-w-[750px] overflow-hidden">
-                  <div className="grid grid-cols-3 divide-x divide-slate-50">
+                  <div className="grid grid-cols-2 divide-x divide-slate-50">
                     {[
-                      { group: "Performance & Ads", items: ["performance", "social-ads", "ugc"] },
-                      { group: "Influencer & Content", items: ["influencer", "content"] },
-                      { group: "Search & Tech", items: ["seo", "aeo", "design"] }
+                      { group: "Revenue & Growth", items: ["growth-marketing", "web-funnel"] },
+                      { group: "Content & Trust", items: ["influencer-creator", "creative-studio"] }
                     ].map((col, idx) => (
                       <div key={idx} className="p-6">
                         <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4 border-l-2 border-brand pl-3">{col.group}</div>
@@ -133,9 +132,8 @@ export function Navbar({ scrolled }: { scrolled: boolean }) {
               <div className="h-px bg-slate-100 my-2" />
               <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Services</div>
               {[
-                { group: "Performance & Ads", items: ["performance", "social-ads", "ugc"] },
-                { group: "Influencer & Content", items: ["influencer", "content"] },
-                { group: "Search & Tech", items: ["seo", "aeo", "design"] }
+                { group: "Revenue & Growth", items: ["growth-marketing", "web-funnel"] },
+                { group: "Content & Trust", items: ["influencer-creator", "creative-studio"] }
               ].map((col, idx) => (
                 <div key={idx} className="flex flex-col gap-3 mb-4">
                   <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest border-l-2 border-brand pl-3">{col.group}</div>

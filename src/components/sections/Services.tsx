@@ -26,11 +26,11 @@ export function Services() {
           transition={{ delay: 0.1 }}
           className="text-lg text-slate-500 max-w-xl mx-auto"
         >
-          From UGC to full-funnel ad campaigns — we cover every touchpoint of your customer journey.
+          From UGC to full-funnel ad campaigns, we cover every touchpoint of your customer journey.
         </motion.p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {SVCS.map((s, i) => (
           <motion.div 
             key={s.id}

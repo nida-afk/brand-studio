@@ -53,7 +53,7 @@ export function CTABand() {
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "32px 32px" }} />
       
       <div className="relative z-10">
-        <div className="text-xs font-bold text-white/60 uppercase tracking-widest mb-4">Free Consultation — No Commitments</div>
+        <div className="text-xs font-bold text-white/60 uppercase tracking-widest mb-4">Free Consultation: No Commitments</div>
         <h2 className="text-3xl md:text-6xl font-display font-extrabold text-white tracking-tight mb-6">Ready to Propel Your Brand?</h2>
         <p className="text-lg text-white/70 max-w-lg mx-auto mb-10">Book a free 30-min strategy call. We will show you exactly where you are leaving money on the table.</p>
         

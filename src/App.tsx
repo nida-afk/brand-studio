@@ -10,9 +10,12 @@ import { InfluencerJoinPage } from "./pages/InfluencerJoin";
 import { ServiceDetailPage } from "./pages/ServiceDetail";
 import { PolicyPage } from "./pages/Policy";
 
+import { ScrollToTop } from "./components/ui/ScrollToTop";
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />

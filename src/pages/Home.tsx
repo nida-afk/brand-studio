@@ -9,6 +9,8 @@ import { Process } from "../components/sections/Process";
 import { Testimonials } from "../components/sections/Testimonials";
 import { FAQ, CTABand } from "../components/sections/FAQ";
 
+import { Comparison } from "../components/sections/Comparison";
+
 export function HomePage() {
   const location = useLocation();
 
@@ -30,6 +32,7 @@ export function HomePage() {
       <Ticker />
       <ClientLogos />
       <Services />
+      <Comparison />
       <CaseStudies />
       <Process />
       <Testimonials />

@@ -25,7 +25,7 @@ export function Hero() {
           >
             <span className="inline-flex items-center gap-2 bg-white border border-brand-muted rounded-full px-4 py-2 text-xs font-bold text-brand shadow-sm">
               <span className="w-2 h-2 rounded-full bg-brand animate-pulse" />
-              Brand Propel Studio — India's Leading UGC & Performance Marketing Agency
+              Brand Propel Studio: India's Leading UGC & Performance Marketing Agency
             </span>
           </motion.div>
 
@@ -46,7 +46,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-slate-600 leading-relaxed max-w-xl mb-6"
           >
-            At <strong>Brand Propel Studio</strong>, we help Indian D2C brands grow through <strong>UGC video production</strong>, <strong>influencer marketing</strong>, and <strong>high-performance social ads</strong> — all under one roof.
+            At <strong>Brand Propel Studio</strong>, we help Indian D2C brands grow through <strong>UGC video production</strong>, <strong>influencer marketing</strong>, and <strong>high-performance social ads</strong>, all under one roof.
           </motion.p>
 
           <motion.div

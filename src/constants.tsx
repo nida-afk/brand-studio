@@ -9,7 +9,10 @@ import {
   Code,
   BarChart3,
   Users,
-  Clock
+  Clock,
+  TrendingUp,
+  Video,
+  Layout
 } from "lucide-react";
 import { 
   Client, 
@@ -119,14 +122,74 @@ export const CLIENTS: Client[] = [
 ];
 
 export const SVCS: Service[] = [
-  { id: "ugc", icon: <Play className="w-6 h-6" />, title: "UGC Content", short: "Authentic creator videos that convert at every funnel stage.", color: B, bg: "#EBF2FF", tagline: "Real People. Real Content. Real Conversions.", features: ["Unboxing & Review Videos", "Testimonials & Social Proof", "Tutorial & Demo Reels", "Lifestyle Content", "UGC for Meta, Google & YouTube", "Hook Testing & Multi-Variant"], results: [{ n: "3-5x", l: "Higher CTR" }, { n: "67%", l: "Lower CPA" }, { n: "48hr", l: "Avg delivery" }] },
-  { id: "influencer", icon: <Star className="w-6 h-6" />, title: "Influencer Marketing", short: "End-to-end influencer campaigns from nano to celebrity.", color: "#7C3AED", bg: "#F3E8FF", tagline: "The Right Voice. The Right Audience.", features: ["Nano, Micro & Macro Campaigns", "Celebrity Tie-ups", "Instagram Reels & Stories", "YouTube Integrations", "Brand Safety Vetting", "Full Campaign Management", "Unboxing Videos (Makeup & Skincare)", "Testimonial Videos"], results: [{ n: "500+", l: "Vetted influencers" }, { n: "1B+", l: "Combined reach" }, { n: "4.2%", l: "Avg engagement" }] },
-  { id: "social-ads", icon: <Megaphone className="w-6 h-6" />, title: "Social Media Ads", short: "Paid social on Meta, Instagram & YouTube built on data.", color: "#1A56DB", bg: "#EBF2FF", tagline: "Scroll-Stopping Ads. Measurable ROI.", features: ["Meta & Instagram Ads", "YouTube & Google Display", "Retargeting Campaigns", "Creative A/B Testing", "Audience Segmentation", "Daily Budget Optimisation", "Product Demo Ads"], results: [{ n: "4.8x", l: "Average ROAS" }, { n: "40%", l: "Lower CPM" }, { n: "2x", l: "Conversion uplift" }] },
-  { id: "performance", icon: <Target className="w-6 h-6" />, title: "Performance Marketing", short: "Full-funnel strategies engineered around ROAS and CPA.", color: "#059669", bg: "#ECFDF5", tagline: "Every Rupee Accountable.", features: ["Google Search & Shopping", "Meta Performance Campaigns", "YouTube Video Funnels", "Landing Page CRO", "ROAS & CPA Optimisation", "Weekly Performance Reviews"], results: [{ n: "120+", l: "Brands scaled" }, { n: "₹50Cr+", l: "Ad spend managed" }, { n: "3.8x", l: "Avg ROAS" }] },
-  { id: "content", icon: <PenTool className="w-6 h-6" />, title: "Content Marketing", short: "Blogs, copy and brand storytelling that build authority.", color: "#0EA5E9", bg: "#E0F2FE", tagline: "Content That Ranks and Converts.", features: ["SEO Blog Writing", "Social Media Copywriting", "Email Campaigns", "Case Studies & Whitepapers", "Brand Storytelling", "Content Calendar Strategy", "Problem-Solution Ads"], results: [{ n: "3x", l: "Organic traffic growth" }, { n: "60%", l: "More time-on-site" }, { n: "45%", l: "Higher email opens" }] },
-  { id: "seo", icon: <Search className="w-6 h-6" />, title: "SEO", short: "Technical SEO and link building that improves rankings.", color: "#DC2626", bg: "#FEF2F2", tagline: "Rank Higher. Grow Organically.", features: ["Full Technical Audit", "Keyword Research", "On-Page Optimisation", "Off-Page & Link Building", "Local SEO", "Monthly Ranking Reports"], results: [{ n: "2.5x", l: "Organic traffic" }, { n: "Top 5", l: "Keyword rankings" }, { n: "35%", l: "More organic leads" }] },
-  { id: "aeo", icon: <Search className="w-6 h-6" />, title: "AEO", short: "Optimising your brand for AI search engines like Perplexity & ChatGPT.", color: "#0D9488", bg: "#F0FDFA", tagline: "Be the Answer AI Gives.", features: ["AI Visibility Audit", "Answer Engine Optimisation", "Structured Data Markup", "Conversational Keyword Research", "Brand Authority Building", "AI Search Tracking"], results: [{ n: "85%", l: "AI Citation Rate" }, { n: "2x", l: "Brand Mentions" }, { n: "Top 3", l: "AI Recommendations" }] },
-  { id: "design", icon: <Code className="w-6 h-6" />, title: "Design & Development", short: "High-converting landing pages and D2C storefronts.", color: "#4F46E5", bg: "#EEF2FF", tagline: "Built for Speed. Designed for Sales.", features: ["Custom Shopify Stores", "High-CVR Landing Pages", "UI/UX Design", "Web Performance Tuning", "Mobile-First Development", "Conversion Rate Optimisation"], results: [{ n: "45%", l: "CVR Improvement" }, { n: "90+", l: "PageSpeed Score" }, { n: "3x", l: "Faster Load Time" }] },
+  { 
+    id: "growth-marketing", 
+    icon: <TrendingUp className="w-6 h-6" />, 
+    title: "Growth Marketing", 
+    short: "Full-funnel strategies engineered around ROAS and CPA.", 
+    color: "#1A56DB", 
+    bg: "#EBF2FF", 
+    tagline: "We drive traffic, convert it, and scale revenue", 
+    features: [
+      "Paid Acquisition (Meta, Google, LinkedIn Ads)",
+      "SEO + AEO (AI Search Optimization)",
+      "Funnel & Conversion (Landing pages, Sales funnels, CRO)",
+      "Tracking & Analytics (Pixel, GA4, Attribution)",
+      "Retention & Lifecycle (Email, WhatsApp, Retargeting)"
+    ], 
+    results: [{ n: "4.8x", l: "Average ROAS" }, { n: "120+", l: "Brands scaled" }, { n: "₹50Cr+", l: "Ad spend managed" }] 
+  },
+  { 
+    id: "influencer-creator", 
+    icon: <Users className="w-6 h-6" />, 
+    title: "Influencer & Creator Marketing", 
+    short: "End-to-end influencer campaigns from nano to celebrity.", 
+    color: "#7C3AED", 
+    bg: "#F3E8FF", 
+    tagline: "We turn creators into scalable acquisition channels", 
+    features: [
+      "Creator Strategy & Persona Mapping",
+      "Influencer Sourcing & Outreach",
+      "Long-term Creator Partnerships",
+      "UGC via Creators & Product Seeding",
+      "Paid Amplification (Creator Whitelisting)"
+    ], 
+    results: [{ n: "500+", l: "Vetted influencers" }, { n: "1B+", l: "Combined reach" }, { n: "4.2%", l: "Avg engagement" }] 
+  },
+  { 
+    id: "creative-studio", 
+    icon: <Video className="w-6 h-6" />, 
+    title: "Creative Studio", 
+    short: "Content that converts, not just looks good.", 
+    color: "#059669", 
+    bg: "#ECFDF5", 
+    tagline: "We create content that converts: not just looks good", 
+    features: [
+      "Ad Creative Production (Static & Video)",
+      "UGC Production (In-House & Controlled)",
+      "Content Creation (Reels, Shorts, Copywriting)",
+      "Brand & Visual Identity Systems"
+    ], 
+    results: [{ n: "3-5x", l: "Higher CTR" }, { n: "67%", l: "Lower CPA" }, { n: "48hr", l: "Avg delivery" }] 
+  },
+  { 
+    id: "web-funnel", 
+    icon: <Layout className="w-6 h-6" />, 
+    title: "Web & App Development", 
+    short: "High-converting digital assets and custom apps built for speed and sales.", 
+    color: "#4F46E5", 
+    bg: "#EEF2FF", 
+    tagline: "We build high-converting digital assets and custom applications", 
+    features: [
+      "Website Design (UI/UX)",
+      "Mobile App Design & Development",
+      "High-CVR Landing Pages",
+      "Shopify & WordPress Development",
+      "Funnel Building & Speed Optimization",
+      "Conversion-focused UX Design"
+    ], 
+    results: [{ n: "45%", l: "CVR Improvement" }, { n: "90+", l: "PageSpeed Score" }, { n: "3x", l: "Faster Load Time" }] 
+  },
 ];
 
 export const STATS: Stat[] = [{ n: "500+", l: "Verified Creators" }, { n: "1B+", l: "Campaign Views" }, { n: "4.8x", l: "Avg ROAS" }, { n: "120+", l: "Brands Scaled" }];
@@ -177,28 +240,28 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Founder",
     role: "D2C Skincare Brand | Facebook Review",
-    text: "We had tried three agencies before Brand Propel Studio. None of them understood UGC the way they do. Within the first month, we could see the difference — people were actually watching our ads till the end. The results speak for themselves.",
+    text: "We had tried three agencies before Brand Propel Studio. None of them understood UGC the way they do. Within the first month, we could see the difference: people were actually watching our ads till the end. The results speak for themselves.",
     avatar: "DS",
     col: "#1A56DB"
   },
   {
     name: "Co-Founder",
     role: "Fitness Supplements Brand | Facebook Review",
-    text: "The team at Brand Propel Studio didn't just run ads — they built us a machine. The UGC content they created became our best-performing assets across every single channel. We hit our 6-month target in month 5.",
+    text: "The team at Brand Propel Studio didn't just run ads; they built us a machine. The UGC content they created became our best-performing assets across every single channel. We hit our 6-month target in month 5.",
     avatar: "FS",
     col: "#059669"
   },
   {
     name: "Marketing Head",
     role: "EdTech Platform | Facebook Review",
-    text: "The quality of leads completely transformed. Our sales team went from struggling to fill demo slots to having a waiting list. The student stories Brand Propel Studio captured were so powerful — we use them everywhere now, not just in ads.",
+    text: "The quality of leads completely transformed. Our sales team went from struggling to fill demo slots to having a waiting list. The student stories Brand Propel Studio captured were so powerful: we use them everywhere now, not just in ads.",
     avatar: "EP",
     col: "#7C3AED"
   },
   {
     name: "Founder & CEO",
     role: "Home & Lifestyle Brand | Facebook Review",
-    text: "We came to Brand Propel Studio with a dream and a tight budget. They made every rupee work. The UGC content they created made our brand look like it had been around for years. We went from zero to a brand people actually talk about — in five months.",
+    text: "We came to Brand Propel Studio with a dream and a tight budget. They made every rupee work. The UGC content they created made our brand look like it had been around for years. We went from zero to a brand people actually talk about in five months.",
     avatar: "HL",
     col: "#F59E0B"
   }
@@ -216,7 +279,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     challenge: {
       text: "Our client, a homegrown D2C skincare brand with a promising product line, was struggling to break through the noise in one of India's most competitive categories. Despite having an excellent product, they were burning budget on generic creative assets that looked polished but failed to convert.",
       bullets: [
-        "ROAS stagnating at 0.9x — below break-even",
+        "ROAS stagnating at 0.9x, below break-even",
         "High-production studio ads generating poor engagement",
         "No authentic social proof to build trust with new audiences",
         "Rising CPMs due to creative fatigue across all ad sets",
@@ -225,7 +288,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     },
     strategy: [
       {
-        phase: "Phase 1 — UGC Creative Production (Weeks 1–3)",
+        phase: "Phase 1: UGC Creative Production (Weeks 1–3)",
         bullets: [
           "Sourced and briefed 12 micro-creators across skin types, age groups, and geographies",
           "Produced 40+ UGC video assets in native formats: unboxings, before/after routines, 'Get Ready With Me' hooks, and honest reviews",
@@ -233,7 +296,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         ]
       },
       {
-        phase: "Phase 2 — Performance Campaign Architecture (Weeks 3–5)",
+        phase: "Phase 2: Performance Campaign Architecture (Weeks 3–5)",
         bullets: [
           "Built a structured Meta Ads testing framework: 6 ad sets, 3 audiences, 5–7 creatives per set",
           "Deployed Cost Cap and Minimum ROAS bidding strategies simultaneously",
@@ -241,7 +304,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         ]
       },
       {
-        phase: "Phase 3 — Optimisation & Scaling (Weeks 6–13)",
+        phase: "Phase 3: Optimisation & Scaling (Weeks 6–13)",
         bullets: [
           "Weekly creative audits: killed underperformers within 72 hours, doubled budgets on winning UGCs",
           "Iterated winning hooks into carousel, static, and Reels variations",
@@ -256,7 +319,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "Revenue Driven", value: "₹82L", sub: "In 90 Days" }
     ],
     testimonial: {
-      quote: "We had tried three agencies before Brand Propel Studio. None of them understood UGC the way they do. Within the first month, we could see the difference — people were actually watching our ads till the end. The results speak for themselves.",
+      quote: "We had tried three agencies before Brand Propel Studio. None of them understood UGC the way they do. Within the first month, we could see the difference: people were actually watching our ads till the end. The results speak for themselves.",
       author: "Founder, D2C Skincare Brand (Name Withheld Confidentially)"
     },
     col: "#1A56DB",
@@ -274,9 +337,9 @@ export const CASE_STUDIES: CaseStudy[] = [
       text: "A rising fitness supplements brand came to us with an ambitious goal: reach ₹1 crore in monthly revenue within 6 months. At the time of onboarding, they were doing approximately ₹18 lakhs per month with inconsistent ad performance and no structured content strategy.",
       bullets: [
         "Monthly revenue plateaued at ₹18–22 lakhs with no growth trajectory",
-        "Zero UGC library — all ads were brand-produced, studio-quality but low on trust",
+        "Zero UGC library: all ads were brand-produced, studio-quality but low on trust",
         "Google Ads account was unstructured with no Shopping feed optimisation",
-        "No retargeting infrastructure — losing warm traffic daily",
+        "No retargeting infrastructure: losing warm traffic daily",
         "Customer acquisition cost exceeding ₹950 per order"
       ]
     },
@@ -284,7 +347,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         phase: "UGC Content Engine",
         bullets: [
-          "Onboarded 20 fitness creators — athletes, gym-goers, home workout enthusiasts — spanning men and women across age groups",
+          "Onboarded 20 fitness creators (athletes, gym-goers, home workout enthusiasts) spanning men and women across age groups",
           "Produced 60+ UGC assets monthly: transformation testimonials, 'What I Eat in a Day' integrations, workout routine embeds, and myth-busting educational content",
           "Created a UGC content calendar aligned with fitness seasonality: New Year, summer shred, festive gifting"
         ]
@@ -313,7 +376,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "Blended ROAS", value: "6.8x", sub: "Across Channels" }
     ],
     testimonial: {
-      quote: "The team at Brand Propel Studio didn't just run ads — they built us a machine. The UGC content they created became our best-performing assets across every single channel. We hit our 6-month target in month 5.",
+      quote: "The team at Brand Propel Studio didn't just run ads; they built us a machine. The UGC content they created became our best-performing assets across every single channel. We hit our 6-month target in month 5.",
       author: "Co-Founder, Fitness Supplements Brand (Name Withheld Confidentially)"
     },
     col: "#1A56DB",
@@ -328,7 +391,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     services: "UGC + Meta Lead Gen + YouTube",
     market: "India (English + Regional)",
     challenge: {
-      text: "An EdTech platform offering professional upskilling courses approached Brand Propel Studio with a critical problem: their cost per lead (CPL) had risen to ₹420 per lead — nearly double the industry benchmark — and lead quality had deteriorated significantly, with low show-up rates on demo calls.",
+      text: "An EdTech platform offering professional upskilling courses approached Brand Propel Studio with a critical problem: their cost per lead (CPL) had risen to ₹420 per lead, nearly double the industry benchmark, and lead quality had deteriorated significantly, with low show-up rates on demo calls.",
       bullets: [
         "CPL at ₹420 against a target of ₹180",
         "Demo call show-up rates below 22%",
@@ -341,16 +404,16 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         phase: "Student UGC Programme",
         bullets: [
-          "Identified and briefed 15 past students to create authentic transformation stories — 'Where I was vs. where I am now' style content",
+          "Identified and briefed 15 past students to create authentic transformation stories: 'Where I was vs. where I am now' style content",
           "Produced 8 long-form video testimonials (60–90 sec) and 25 short-form clips (15–30 sec) optimised for Reels and YouTube Shorts",
-          "Created 'Day in the Life' UGC showing how students balanced the course with jobs and family — addressing the #1 objection"
+          "Created 'Day in the Life' UGC showing how students balanced the course with jobs and family, addressing the #1 objection"
         ]
       },
       {
         phase: "Meta Lead Generation Campaigns",
         bullets: [
           "Launched Instant Form campaigns using UGC hooks paired with specific outcome promises",
-          "A/B tested 4 lead form lengths — identified the optimal 3-field form that increased completion rates by 44%",
+          "A/B tested 4 lead form lengths: identified the optimal 3-field form that increased completion rates by 44%",
           "Built lookalike audiences from existing enrolled students to find high-quality prospects"
         ]
       },
@@ -370,7 +433,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "CPL Reduction", value: "57%", sub: "In 4 Months" }
     ],
     testimonial: {
-      quote: "The quality of leads completely transformed. Our sales team went from struggling to fill demo slots to having a waiting list. The student stories Brand Propel Studio captured were so powerful — we use them everywhere now, not just in ads.",
+      quote: "The quality of leads completely transformed. Our sales team went from struggling to fill demo slots to having a waiting list. The student stories Brand Propel Studio captured were so powerful: we use them everywhere now, not just in ads.",
       author: "Marketing Head, EdTech Platform (Name Withheld Confidentially)"
     },
     col: "#7C3AED",
@@ -385,12 +448,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     services: "UGC Strategy + Meta + Influencer",
     market: "India (Urban, Tier 1)",
     challenge: {
-      text: "This case study is about a brand launch, not a turnaround. A home décor and lifestyle D2C brand approached us at pre-launch stage — no existing customer base, no brand awareness, no content library, and a modest initial marketing budget of ₹4 lakhs per month.",
+      text: "This case study is about a brand launch, not a turnaround. A home décor and lifestyle D2C brand approached us at pre-launch stage: no existing customer base, no brand awareness, no content library, and a modest initial marketing budget of ₹4 lakhs per month.",
       bullets: [
-        "Zero brand awareness — launching into a competitive, aesthetic-driven category",
+        "Zero brand awareness: launching into a competitive, aesthetic-driven category",
         "Limited budget requiring extremely high creative efficiency",
         "No existing customers to generate organic social proof",
-        "Long consideration cycle — home purchases require inspiration before transaction",
+        "Long consideration cycle: home purchases require inspiration before transaction",
         "Need to establish brand aesthetic while maintaining UGC authenticity"
       ]
     },
@@ -400,22 +463,22 @@ export const CASE_STUDIES: CaseStudy[] = [
         bullets: [
           "Seeded products with 25 home décor creators, interior styling enthusiasts, and lifestyle micro-influencers",
           "Briefed creators to produce content in 5 formats: room tours, styling tutorials, product unboxings, 'Before & After' transformations, and gifting moments",
-          "Produced 80+ UGC assets before running a single paid rupee — establishing a robust creative library"
+          "Produced 80+ UGC assets before running a single paid rupee, establishing a robust creative library"
         ]
       },
       {
-        phase: "Launch Campaign — Month 2–3",
+        phase: "Launch Campaign: Month 2–3",
         bullets: [
           "Meta Awareness + Traffic campaigns using room transformation and styling UGC as hero creatives",
-          "Launched a Catalogue Sales campaign with lifestyle UGC as ad creative — a key differentiator vs. competitor product images",
-          "Collaborated with 5 larger home décor influencers (100K–500K) for brand credibility content — amplified via paid dark posts"
+          "Launched a Catalogue Sales campaign with lifestyle UGC as ad creative: a key differentiator vs. competitor product images",
+          "Collaborated with 5 larger home décor influencers (100K–500K) for brand credibility content, amplified via paid dark posts"
         ]
       },
       {
-        phase: "Scale & Retention — Month 4–5",
+        phase: "Scale & Retention: Month 4–5",
         bullets: [
           "Activated first-buyer retargeting with user-submitted photos (collected via post-purchase email flow)",
-          "Launched a customer UGC incentive programme: discount in exchange for styled photos — generating 40+ organic assets monthly",
+          "Launched a customer UGC incentive programme: discount in exchange for styled photos, generating 40+ organic assets monthly",
           "Built Google Shopping presence with UGC-enhanced product listings"
         ]
       }
@@ -427,7 +490,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "Repeat Purchase", value: "38%", sub: "Within 90 Days" }
     ],
     testimonial: {
-      quote: "We came to Brand Propel Studio with a dream and a tight budget. They made every rupee work. The UGC content they created made our brand look like it had been around for years. We went from zero to a brand people actually talk about — in five months.",
+      quote: "We came to Brand Propel Studio with a dream and a tight budget. They made every rupee work. The UGC content they created made our brand look like it had been around for years. We went from zero to a brand people actually talk about in five months.",
       author: "Founder & CEO, Home & Lifestyle Brand (Name Withheld Confidentially)"
     },
     col: "#059669",
@@ -498,7 +561,7 @@ export const FEATURED_CREATORS: FeaturedCreator[] = [
 
 export const FAQS: FAQ[] = [
   { q: "How quickly can you start producing UGC?", a: "We begin creator casting within 48 hours of onboarding. First deliverables are ready within 7-10 business days." },
-  { q: "Do you only work with D2C brands?", a: "D2C and e-commerce are our sweet spot but we work with any consumer brand selling online — apps, FMCG, and service businesses too." },
+  { q: "Do you only work with D2C brands?", a: "D2C and e-commerce are our sweet spot but we work with any consumer brand selling online: apps, FMCG, and service businesses too." },
   { q: "How do you vet your creator network?", a: "Every creator is manually reviewed across 30+ parameters including audience quality, engagement rate and brand safety record." },
   { q: "Can UGC be used for paid ads?", a: "Yes. All UGC includes usage rights for paid advertising on Meta, Google and YouTube. Ad-usage rights are in every creator agreement." },
   { q: "What is the minimum ad spend budget?", a: "We recommend minimum Rs 50,000/month for Meta campaigns to generate enough data for meaningful optimisation." },

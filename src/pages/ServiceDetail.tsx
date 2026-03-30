@@ -19,12 +19,27 @@ const chartData = [
 
 // Custom descriptions for specific features
 const featureDetails: Record<string, string> = {
-  "Paid Acquisition (Meta, Google, LinkedIn Ads)": "Full-funnel ad strategies across the world's most powerful platforms.",
-  "SEO + AEO (AI Search Optimization)": "Rank on Google and be the answer AI engines like ChatGPT and Perplexity give.",
-  "Funnel & Conversion (Landing pages, Sales funnels, CRO)": "We don't just drive traffic; we build the infrastructure to convert it into revenue.",
+  "Paid Acquisition (Meta, Google, Amazon, LinkedIn Ads)": "Full-funnel ad strategies across the world's most powerful platforms.",
+  "360° Digital Marketing Strategy & Execution": "Comprehensive multi-channel approach to dominate your market and scale revenue.",
+  "SEO + AEO (AI Search Optimization) for Organic Growth": "Rank on Google and be the answer AI engines like ChatGPT and Perplexity give.",
+  "Conversion Rate Optimization (CRO) & Funnel Engineering": "We don't just drive traffic; we build the infrastructure to convert it into revenue.",
+  "Advanced Tracking & Analytics (GA4, GTM, Server-side Tagging)": "Precision measurement to track every rupee and optimize for maximum ROI.",
+  "Retention Marketing (Email, WhatsApp, CRM Automation)": "Maximize LTV by turning one-time buyers into loyal brand advocates.",
   "UGC Production (In-House & Controlled)": "Scalable, scripted, and high-performance UGC that we control from start to finish.",
+  "Ad Creative Production (Static & Video)": "High-converting visual assets designed specifically for social media performance.",
+  "Content Creation (Reels, Shorts, Copywriting)": "Engaging short-form content that captures attention and drives action.",
+  "Brand & Visual Identity Systems": "Cohesive design frameworks that build trust and professional brand presence.",
   "Creator Strategy & Persona Mapping": "Finding the exact voices that resonate with your target audience's psychology.",
-  "Conversion-focused UX Design": "Digital assets designed with one goal in mind: making the sale."
+  "Influencer Sourcing & Outreach": "End-to-end management of creator relationships and campaign logistics.",
+  "Long-term Creator Partnerships": "Building sustainable brand-creator alliances for consistent performance.",
+  "UGC via Creators & Product Seeding": "Authentic product experiences shared by real people to build social proof.",
+  "Paid Amplification (Creator Whitelisting)": "Scaling winning creator content through targeted paid media spend.",
+  "Conversion-focused UX Audit & Design": "Digital assets designed with one goal in mind: making the sale.",
+  "CMS Development (Shopify, WordPress, Webflow)": "Enterprise-grade Shopify, WordPress, and Webflow solutions built for scaling and conversion.",
+  "Custom Web & App Development (React, Next.js)": "Modern, high-performance web applications built with React and Next.js for maximum speed and SEO.",
+  "High-CVR Landing Page Design (UI/UX)": "Conversion-optimized landing pages that turn clicks into customers with affordable, result-driven design.",
+  "Funnel Building & Speed Optimization": "End-to-end funnel architecture with sub-2 second load times and 95+ PageSpeed scores.",
+  "Scalable & Secure IT Management": "Clear steps that ensure scalable, secure, and hassle-free IT management for your digital assets."
 };
 
 const ROASCalculator = () => {
@@ -124,7 +139,7 @@ export function ServiceDetailPage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            {id === "growth-marketing" && (
+            {id === "performance-marketing" && (
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl rotate-[-2deg]">
@@ -240,7 +255,7 @@ export function ServiceDetailPage() {
         </div>
       </section>
 
-      {id === "growth-marketing" && (
+      {id === "performance-marketing" && (
         <section className="py-24 px-[5%] bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -276,7 +291,7 @@ export function ServiceDetailPage() {
         </section>
       )}
 
-      {id === "growth-marketing" && (
+      {id === "performance-marketing" && (
         <section className="py-24 px-[5%] bg-slate-900 text-white overflow-hidden relative">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(26,86,219,0.15),transparent)] pointer-events-none" />
           <div className="max-w-6xl mx-auto">
@@ -337,7 +352,7 @@ export function ServiceDetailPage() {
         </section>
       )}
 
-      {id === "growth-marketing" && (
+      {id === "performance-marketing" && (
         <section className="py-24 px-[5%] bg-slate-900 text-white overflow-hidden">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -656,15 +671,15 @@ export function ServiceDetailPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
                 <Label>The Infrastructure</Label>
-                <h2 className="text-4xl md:text-6xl font-display font-bold mt-4 mb-8">Web & App <span className="text-brand">Development</span></h2>
-                <p className="text-lg text-slate-600 mb-10">We don't just build websites; we build conversion machines and custom applications. Every pixel is optimized to guide your customers from curiosity to checkout.</p>
+                <h2 className="text-4xl md:text-6xl font-display font-bold mt-4 mb-8">Result-Driven <span className="text-brand">Web & App</span></h2>
+                <p className="text-lg text-slate-600 mb-10">We don't just build websites; we build high-performance digital assets. Our scalable solutions are engineered for speed and optimized to drive maximum sales through modern technology.</p>
                 
                 <div className="space-y-4">
                   {[
-                    { t: "Mobile App Development", d: "Custom iOS & Android apps built for performance and scale." },
-                    { t: "High-CVR Web Design", d: "Sub-2 second load times for zero bounce rate." },
-                    { t: "Mobile-First UX", d: "Designed for the thumb, optimized for the scroll." },
-                    { t: "One-Click Checkout", d: "Removing every possible friction point in the funnel." }
+                    { t: "Conversion-Focused CMS", d: "High-volume Shopify, WordPress, and Webflow stores built for global scale and revenue." },
+                    { t: "Modern Web & App Builds", d: "Fast, secure, and modern applications using React, Next.js, and Webflow for pixel-perfect results." },
+                    { t: "Hassle-Free IT Management", d: "Scalable and secure management that takes the technical burden off your shoulders." },
+                    { t: "Speed & SEO Optimization", d: "Sub-2 second load times and technical SEO that ranks in the age of AI search." }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4 p-4 rounded-xl bg-white border border-slate-100 shadow-sm">
                       <div className="w-8 h-8 rounded-lg bg-brand/10 text-brand flex items-center justify-center shrink-0">

@@ -33,7 +33,7 @@ export function Footer() {
           </div>
         </div>
         {[
-          { t: "Services", ls: [{ l: "Growth Marketing", p: "/service/growth-marketing" }, { l: "Influencer & Creator Marketing", p: "/service/influencer-creator" }, { l: "Creative Studio", p: "/service/creative-studio" }, { l: "Web & App Development", p: "/service/web-funnel" }] },
+          { t: "Services", ls: [{ l: "Performance Marketing", p: "/service/performance-marketing" }, { l: "Influencer & Creator Marketing", p: "/service/influencer-creator" }, { l: "Creative Studio", p: "/service/creative-studio" }, { l: "Web & App Development", p: "/service/web-funnel" }] },
           { t: "Company", ls: [{ l: "About Us", p: "/about" }, { l: "Case Studies", p: "/case-studies" }, { l: "Blogs", p: "/blogs" }, { l: "Contact", p: "/contact" }] },
           { t: "Contact", ls: [{ l: "hello@brandpropelstudio.in", p: "" }, { l: "+91 98765 43210", p: "" }, { l: "Pune, India", p: "" }] },
         ].map((col, i) => (

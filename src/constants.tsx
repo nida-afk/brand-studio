@@ -66,7 +66,7 @@ export const CLIENTS: Client[] = [
   },
   {
     name: "Qehhwa Cafe",
-    logo: "https://scontent.fpnq27-1.fna.fbcdn.net/v/t39.30808-6/457448327_122105839754489987_154075907298600601_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=JS64Pzc5qRUQ7kNvwG5PdGx&_nc_oc=AdpPiSQ54yd2RN-lGqpfZouusOIJ4Ct8GN_y1JgHYIo4HmfcjVqYj1cIpHFzZFYnPG2ZYGyEv5D2ui_Mj8T-EcJR&_nc_zt=23&_nc_ht=scontent.fpnq27-1.fna&_nc_gid=FAQ65k57_Vd8lhmc8KvhQw&_nc_ss=7a32e&oh=00_AfwtLG4gIu3jqCyZqwZFeLcgVuTfhYg69NvsHbpxNOXi0A&oe=69C53D0E",
+    logo: "https://scontent.fpnq6-1.fna.fbcdn.net/v/t39.30808-6/457448327_122105839754489987_154075907298600601_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=lvbk84Zbxr4Q7kNvwFFgVnc&_nc_oc=Adr8w9ANwLXYMKmI1RY9GuWrswOmutjvt5Q31aytpzImn4G8oc1TP5vSJ8_p2PJN_xIBHkdp4q9ZtBZIl5PtyXw_&_nc_zt=23&_nc_ht=scontent.fpnq6-1.fna&_nc_gid=q8uU2_taZsS-W89N2TD2Ww&_nc_ss=7a389&oh=00_AfxL_bkht8sSNIsQE0ca-aS3JQSQPaQZyTmfNQiTsCAu5A&oe=69D071CE",
     url: "https://www.facebook.com/photo/?fbid=122094877352512302&set=a.122094872780512302"
   },
   { 
@@ -123,21 +123,22 @@ export const CLIENTS: Client[] = [
 
 export const SVCS: Service[] = [
   { 
-    id: "growth-marketing", 
+    id: "performance-marketing", 
     icon: <TrendingUp className="w-6 h-6" />, 
-    title: "Growth Marketing", 
-    short: "Full-funnel strategies engineered around ROAS and CPA.", 
+    title: "Performance Marketing", 
+    short: "India's top-rated full-funnel strategies engineered for maximum ROAS and lowest CPA.", 
     color: "#1A56DB", 
     bg: "#EBF2FF", 
-    tagline: "We drive traffic, convert it, and scale revenue", 
+    tagline: "We scale brands with data-driven Meta, Google, and Amazon Ads", 
     features: [
-      "Paid Acquisition (Meta, Google, LinkedIn Ads)",
-      "SEO + AEO (AI Search Optimization)",
-      "Funnel & Conversion (Landing pages, Sales funnels, CRO)",
-      "Tracking & Analytics (Pixel, GA4, Attribution)",
-      "Retention & Lifecycle (Email, WhatsApp, Retargeting)"
+      "Paid Acquisition (Meta, Google, Amazon, LinkedIn Ads)",
+      "360° Digital Marketing Strategy & Execution",
+      "SEO + AEO (AI Search Optimization) for Organic Growth",
+      "Conversion Rate Optimization (CRO) & Funnel Engineering",
+      "Advanced Tracking & Analytics (GA4, GTM, Server-side Tagging)",
+      "Retention Marketing (Email, WhatsApp, CRM Automation)"
     ], 
-    results: [{ n: "4.8x", l: "Average ROAS" }, { n: "120+", l: "Brands scaled" }, { n: "₹50Cr+", l: "Ad spend managed" }] 
+    results: [{ n: "3.5x+", l: "Average ROAS" }, { n: "150+", l: "Brands Scaled" }, { n: "₹100Cr+", l: "Ad Spend Managed" }] 
   },
   { 
     id: "influencer-creator", 
@@ -176,19 +177,19 @@ export const SVCS: Service[] = [
     id: "web-funnel", 
     icon: <Layout className="w-6 h-6" />, 
     title: "Web & App Development", 
-    short: "High-converting digital assets and custom apps built for speed and sales.", 
+    short: "Scalable, high-performance digital assets and custom web solutions engineered for speed and maximum sales conversion.", 
     color: "#4F46E5", 
     bg: "#EEF2FF", 
-    tagline: "We build high-converting digital assets and custom applications", 
+    tagline: "High converting digital assets and custom apps built for speed and sales.", 
     features: [
-      "Website Design (UI/UX)",
-      "Mobile App Design & Development",
-      "High-CVR Landing Pages",
-      "Shopify & WordPress Development",
+      "CMS Development (Shopify, WordPress, Webflow)",
+      "Custom Web & App Development (React, Next.js)",
+      "High-CVR Landing Page Design (UI/UX)",
       "Funnel Building & Speed Optimization",
-      "Conversion-focused UX Design"
+      "Conversion-focused UX Audit & Design",
+      "Scalable & Secure IT Management"
     ], 
-    results: [{ n: "45%", l: "CVR Improvement" }, { n: "90+", l: "PageSpeed Score" }, { n: "3x", l: "Faster Load Time" }] 
+    results: [{ n: "60%", l: "Speed Improvement" }, { n: "95+", l: "PageSpeed Score" }, { n: "4x", l: "Faster Load Time" }] 
   },
 ];
 

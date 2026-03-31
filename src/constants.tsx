@@ -13,7 +13,8 @@ import {
   TrendingUp,
   Video,
   Layout
-} from "lucide-react";
+} 
+from "lucide-react";
 import { 
   Client, 
   Service, 
@@ -141,12 +142,30 @@ export const SVCS: Service[] = [
     results: [{ n: "3.5x+", l: "Average ROAS" }, { n: "150+", l: "Brands Scaled" }, { n: "₹100Cr+", l: "Ad Spend Managed" }] 
   },
   { 
+    id: "web-funnel", 
+    icon: <Layout className="w-6 h-6" />, 
+    title: "Web & App Development", 
+    short: "High-converting digital assets and custom apps built for speed and sales.", 
+    color: "#4F46E5", 
+    bg: "#EBF2FF", 
+    tagline: "We build high-converting digital assets and custom applications", 
+    features: [
+      "Website Design (UI/UX)",
+      "Mobile App Design & Development",
+      "High-CVR Landing Pages",
+      "Shopify & WordPress Development",
+      "Funnel Building & Speed Optimization",
+      "Conversion-focused UX Design"
+    ], 
+    results: [{ n: "45%", l: "CVR Improvement" }, { n: "90+", l: "PageSpeed Score" }, { n: "3x", l: "Faster Load Time" }] 
+  },
+  { 
     id: "influencer-creator", 
     icon: <Users className="w-6 h-6" />, 
     title: "Influencer & Creator Marketing", 
     short: "End-to-end influencer campaigns from nano to celebrity.", 
-    color: "#7C3AED", 
-    bg: "#F3E8FF", 
+    color: "#4F46E5", 
+    bg: "#EBF2FF", 
     tagline: "We turn creators into scalable acquisition channels", 
     features: [
       "Creator Strategy & Persona Mapping",
@@ -162,8 +181,8 @@ export const SVCS: Service[] = [
     icon: <Video className="w-6 h-6" />, 
     title: "Creative Studio", 
     short: "Content that converts, not just looks good.", 
-    color: "#059669", 
-    bg: "#ECFDF5", 
+    color: "#4F46E5", 
+    bg: "#EBF2FF",
     tagline: "We create content that converts: not just looks good", 
     features: [
       "Ad Creative Production (Static & Video)",
@@ -172,24 +191,6 @@ export const SVCS: Service[] = [
       "Brand & Visual Identity Systems"
     ], 
     results: [{ n: "3-5x", l: "Higher CTR" }, { n: "67%", l: "Lower CPA" }, { n: "48hr", l: "Avg delivery" }] 
-  },
-  { 
-    id: "web-funnel", 
-    icon: <Layout className="w-6 h-6" />, 
-    title: "Web & App Development", 
-    short: "Scalable, high-performance digital assets and custom web solutions engineered for speed and maximum sales conversion.", 
-    color: "#4F46E5", 
-    bg: "#EEF2FF", 
-    tagline: "High converting digital assets and custom apps built for speed and sales.", 
-    features: [
-      "CMS Development (Shopify, WordPress, Webflow)",
-      "Custom Web & App Development (React, Next.js)",
-      "High-CVR Landing Page Design (UI/UX)",
-      "Funnel Building & Speed Optimization",
-      "Conversion-focused UX Audit & Design",
-      "Scalable & Secure IT Management"
-    ], 
-    results: [{ n: "60%", l: "Speed Improvement" }, { n: "95+", l: "PageSpeed Score" }, { n: "4x", l: "Faster Load Time" }] 
   },
 ];
 

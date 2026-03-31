@@ -16,7 +16,7 @@ export function Navbar({ scrolled }: { scrolled: boolean }) {
       <Link to="/">
         <Logo variant="light" />
       </Link>
-      
+
       <div className="hidden md:flex gap-8 items-center">
         <Link to="/" className={`text-sm font-semibold transition-colors ${page === "home" ? "text-brand" : "text-slate-600 hover:text-brand"}`}>Home</Link>
         <div className="relative" onMouseEnter={() => setDrop(true)} onMouseLeave={() => setDrop(false)}>
@@ -25,7 +25,7 @@ export function Navbar({ scrolled }: { scrolled: boolean }) {
           </button>
           <AnimatePresence>
             {drop && (
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
@@ -44,8 +44,8 @@ export function Navbar({ scrolled }: { scrolled: boolean }) {
                             const s = SVCS.find(x => x.id === id);
                             if (!s) return null;
                             return (
-                              <Link 
-                                key={s.id} 
+                              <Link
+                                key={s.id}
                                 to={`/service/${s.id}`}
                                 onClick={() => setDrop(false)}
                                 className="w-full text-left px-3 py-2.5 text-sm font-semibold text-slate-600 hover:bg-slate-50 hover:text-brand flex items-center gap-3 rounded-lg transition-colors group"
@@ -70,13 +70,21 @@ export function Navbar({ scrolled }: { scrolled: boolean }) {
       </div>
 
       <div className="flex gap-3 items-center">
-        <Link 
+        {/* <Link 
           to="/contact"
           className="hidden lg:flex px-5 py-2 rounded-lg bg-brand text-white text-xs font-bold hover:bg-brand-dark transition-all shadow-lg shadow-brand/10"
         >
           Book Free Audit
-        </Link>
-        <Link 
+        </Link> */}
+        <a
+          href="https://calendly.com/fardinshaikh8875/new-meeting"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden lg:flex px-5 py-2 rounded-lg bg-brand text-white text-xs font-bold hover:bg-brand-dark transition-all shadow-lg shadow-brand/10"
+        >
+          Book Free Audit
+        </a>
+        <Link
           to="/influencer-join"
           className="hidden sm:flex px-5 py-2 rounded-lg border-2 border-brand text-brand text-xs font-bold hover:bg-brand-light transition-all"
         >
@@ -90,7 +98,7 @@ export function Navbar({ scrolled }: { scrolled: boolean }) {
       {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
@@ -104,8 +112,8 @@ export function Navbar({ scrolled }: { scrolled: boolean }) {
             </div>
             <div className="flex flex-col gap-4 mt-8 overflow-y-auto">
               {["Home", "Case Studies", "Blogs", "Contact"].map(item => (
-                <Link 
-                  key={item} 
+                <Link
+                  key={item}
                   to={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
                   className="text-2xl font-bold text-slate-900 text-left"
                   onClick={() => setIsOpen(false)}
@@ -114,14 +122,22 @@ export function Navbar({ scrolled }: { scrolled: boolean }) {
                 </Link>
               ))}
               <div className="flex flex-col gap-3 mt-4">
-                <Link 
+                {/* <Link 
                   to="/contact"
                   className="w-full py-4 rounded-xl bg-brand text-white font-bold text-center"
                   onClick={() => setIsOpen(false)}
                 >
                   Book Free Audit
-                </Link>
-                <Link 
+                </Link> */}
+                <a
+                  href="https://calendly.com/fardinshaikh8875/new-meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden lg:flex px-5 py-2 rounded-lg bg-brand text-white text-xs font-bold hover:bg-brand-dark transition-all shadow-lg shadow-brand/10"
+                >
+                  Book Free Audit
+                </a>
+                <Link
                   to="/influencer-join"
                   className="w-full py-4 rounded-xl border-2 border-brand text-brand font-bold text-center"
                   onClick={() => setIsOpen(false)}
@@ -142,8 +158,8 @@ export function Navbar({ scrolled }: { scrolled: boolean }) {
                       const s = SVCS.find(x => x.id === id);
                       if (!s) return null;
                       return (
-                        <Link 
-                          key={s.id} 
+                        <Link
+                          key={s.id}
                           to={`/service/${s.id}`}
                           className="text-lg font-bold text-slate-600 text-left flex items-center gap-3"
                           onClick={() => setIsOpen(false)}

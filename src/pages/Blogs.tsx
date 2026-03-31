@@ -3,8 +3,10 @@ import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { useInView } from "../lib/hooks";
 import { Label } from "../components/ui/Label";
-import { BLOG_POSTS, CASE_STUDIES } from "../constants";
+// import { BLOG_POSTS, CASE_STUDIES } from "../constants";
+import { CASE_STUDIES } from "../constants";
 import { useNavigate } from "react-router-dom";
+import { BLOG_POSTS } from "../BlogPosts";
 
 export function BlogsPage() {
   const [ref, inView] = useInView(0.05);
@@ -33,7 +35,7 @@ export function BlogsPage() {
                 <div className="text-xs text-slate-400 font-bold mb-3">{post.date}</div>
                 <h3 className="text-xl font-bold text-slate-900 mb-6 group-hover:text-brand transition-colors">{post.title}</h3>
                 <button 
-                  onClick={() => navigate("/contact")}
+                  onClick={() => navigate(post.path)}
                   className="flex items-center gap-2 text-brand font-bold text-sm group-hover:gap-3 transition-all"
                 >
                   Read More <ArrowRight className="w-4 h-4" />

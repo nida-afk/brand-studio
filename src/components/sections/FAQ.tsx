@@ -58,7 +58,14 @@ export function CTABand() {
         <p className="text-lg text-white/70 max-w-lg mx-auto mb-10">Book a free 30-min strategy call. We will show you exactly where you are leaving money on the table.</p>
         
         <div className="flex flex-wrap justify-center gap-4">
-          <button className="px-10 py-5 rounded-xl bg-white text-brand font-bold text-lg hover:bg-brand-muted shadow-2xl transition-all" onClick={() => navigate("/contact")}>Book Free Strategy Call</button>
+          {/* <button className="px-10 py-5 rounded-xl bg-white text-brand font-bold text-lg hover:bg-brand-muted shadow-2xl transition-all" onClick={() => navigate("/contact")}>Book Free Strategy Call</button>
+           */}
+            <button
+            className="px-10 py-5 rounded-xl bg-white text-brand font-bold text-lg hover:bg-brand-muted shadow-2xl transition-all"
+            onClick={() => window.open("https://calendly.com/fardinshaikh8875/new-meeting", "_blank")}
+          >
+            Book Free Strategy Call
+          </button>
           <button className="px-10 py-5 rounded-xl bg-white/10 text-white font-bold text-lg border border-white/20 hover:bg-white/20 transition-all" onClick={() => navigate("/service/influencer")}>Join as an Influencer</button>
         </div>
       </div>

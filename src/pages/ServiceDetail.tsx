@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "motion/react";
-import { ArrowRight, CheckCircle2, Play, BarChart3, Users2, Sparkles, Zap, Smartphone, Globe } from "lucide-react";
+import { ArrowRight, CheckCircle2, Play, BarChart3, Users2, Sparkles, Zap, Smartphone, Globe, Layout, Code2, ShoppingBag, Check } from "lucide-react";
 import { Label } from "../components/ui/Label";
 import { SVCS } from "../constants";
 import { useInView } from "../lib/hooks";
@@ -666,45 +666,213 @@ export function ServiceDetailPage() {
       )}
 
       {id === "web-funnel" && (
-        <section className="py-24 px-[5%] bg-slate-50">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <Label>The Infrastructure</Label>
-                <h2 className="text-4xl md:text-6xl font-display font-bold mt-4 mb-8">Result-Driven <span className="text-brand">Web & App</span></h2>
-                <p className="text-lg text-slate-600 mb-10">We don't just build websites; we build high-performance digital assets. Our scalable solutions are engineered for speed and optimized to drive maximum sales through modern technology.</p>
-                
-                <div className="space-y-4">
-                  {[
-                    { t: "Conversion-Focused CMS", d: "High-volume Shopify, WordPress, and Webflow stores built for global scale and revenue." },
-                    { t: "Modern Web & App Builds", d: "Fast, secure, and modern applications using React, Next.js, and Webflow for pixel-perfect results." },
-                    { t: "Hassle-Free IT Management", d: "Scalable and secure management that takes the technical burden off your shoulders." },
-                    { t: "Speed & SEO Optimization", d: "Sub-2 second load times and technical SEO that ranks in the age of AI search." }
-                  ].map((item, i) => (
-                    <div key={i} className="flex gap-4 p-4 rounded-xl bg-white border border-slate-100 shadow-sm">
-                      <div className="w-8 h-8 rounded-lg bg-brand/10 text-brand flex items-center justify-center shrink-0">
-                        <CheckCircle2 className="w-4 h-4" />
+        <>
+          {/* Hero / Introduction */}
+          <section className="py-24 px-[5%] bg-slate-50">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                  <Label>The Infrastructure</Label>
+                  <h2 className="text-4xl md:text-6xl font-display font-bold mt-4 mb-8">Result-Driven <span className="text-brand">Web & App</span></h2>
+                  <p className="text-xl font-medium text-slate-900 mb-6 italic">"A website should do one job: turn visitors into customers."</p>
+                  <p className="text-lg text-slate-600 mb-10">We don't just build websites; we build high-performance digital assets. Our scalable solutions are engineered for speed and optimized to drive maximum sales through modern technology.</p>
+                  
+                  <div className="space-y-4">
+                    {[
+                      { t: "Conversion-Focused CMS", d: "High-volume Shopify, WordPress, and Webflow stores built for global scale and revenue." },
+                      { t: "Modern Web & App Builds", d: "Fast, secure, and modern applications using React, Next.js, and Webflow for pixel-perfect results." },
+                      { t: "Hassle-Free IT Management", d: "Scalable and secure management that takes the technical burden off your shoulders." },
+                      { t: "Speed & SEO Optimization", d: "Sub-2 second load times and technical SEO that ranks in the age of AI search." }
+                    ].map((item, i) => (
+                      <div key={i} className="flex gap-4 p-4 rounded-xl bg-white border border-slate-100 shadow-sm">
+                        <div className="w-8 h-8 rounded-lg bg-brand/10 text-brand flex items-center justify-center shrink-0">
+                          <CheckCircle2 className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <div className="font-bold text-slate-900">{item.t}</div>
+                          <div className="text-sm text-slate-500">{item.d}</div>
+                        </div>
                       </div>
-                      <div>
-                        <div className="font-bold text-slate-900">{item.t}</div>
-                        <div className="text-sm text-slate-500">{item.d}</div>
-                      </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <div className="relative">
-                <div className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
-                  <img src="https://picsum.photos/seed/funnel-arch/800/1000" alt="Funnel Architecture" className="w-full h-full object-cover rounded-3xl" referrerPolicy="no-referrer" />
-                </div>
-                <div className="absolute -top-10 -left-10 p-8 rounded-3xl bg-slate-900 text-white shadow-2xl">
-                  <div className="text-4xl font-black text-brand mb-1">42%</div>
-                  <div className="text-xs font-bold uppercase tracking-widest opacity-80">Avg. CVR Increase</div>
+                <div className="relative">
+                  <div className="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
+                    <img src="https://picsum.photos/seed/funnel-arch/800/1000" alt="Funnel Architecture" className="w-full h-full object-cover rounded-3xl" referrerPolicy="no-referrer" />
+                  </div>
+                  <div className="absolute -top-10 -left-10 p-8 rounded-3xl bg-slate-900 text-white shadow-2xl">
+                    <div className="text-4xl font-black text-brand mb-1">42%</div>
+                    <div className="text-xs font-bold uppercase tracking-widest opacity-80">Avg. CVR Increase</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+
+          {/* Services We Offer */}
+          <section className="py-24 px-[5%] bg-white">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <Label>Our Expertise</Label>
+                <h2 className="text-3xl md:text-5xl font-display font-bold mt-4">Web Development Services We Offer</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {[
+                  { 
+                    title: "Business Website Development (CMS)", 
+                    desc: "Scalable Shopify, WordPress, and Webflow stores built for performance and ease of management.",
+                    icon: <Layout className="w-6 h-6" />
+                  },
+                  { 
+                    title: "Custom Website Development", 
+                    desc: "Bespoke web applications built with React, Next.js, and modern tech stacks for unique business needs.",
+                    icon: <Code2 className="w-6 h-6" />
+                  },
+                  { 
+                    title: "Ecommerce Development", 
+                    desc: "High-converting online stores optimized for sales, speed, and seamless customer journeys.",
+                    icon: <ShoppingBag className="w-6 h-6" />
+                  },
+                  { 
+                    title: "Performance Upgrades", 
+                    desc: "Technical SEO, speed optimization, and UI/UX redesigns to turn your site into a customer magnet.",
+                    icon: <Zap className="w-6 h-6" />
+                  }
+                ].map((service, i) => (
+                  <div key={i} className="p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:bg-white hover:shadow-xl transition-all group">
+                    <div className="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-brand mb-6 group-hover:scale-110 transition-transform">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-xl font-bold mb-4">{service.title}</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">{service.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* What You Get */}
+          <section className="py-24 px-[5%] bg-slate-900 text-white">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                  <Label className="text-brand">The Value Proposition</Label>
+                  <h2 className="text-3xl md:text-5xl font-display font-bold mt-4 mb-8">What You Get When You Hire Us</h2>
+                  <div className="space-y-6">
+                    {[
+                      "Full Handover Support & Training",
+                      "Sub-2 Second Page Load Times",
+                      "Mobile-First Responsive Design",
+                      "Technical SEO & AI Search Readiness",
+                      "Conversion Tracking & Analytics Setup",
+                      "Scalable Infrastructure for Future Growth"
+                    ].map((item, i) => (
+                      <div key={i} className="flex gap-4 items-center">
+                        <div className="w-6 h-6 rounded-full bg-brand/20 text-brand flex items-center justify-center shrink-0">
+                          <Check className="w-4 h-4" />
+                        </div>
+                        <span className="text-lg text-slate-300">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-4">
+                    <div className="aspect-square rounded-3xl overflow-hidden">
+                      <img src="https://picsum.photos/seed/dev1/400/400" alt="Development" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    </div>
+                    <div className="aspect-[3/4] rounded-3xl overflow-hidden">
+                      <img src="https://picsum.photos/seed/dev2/400/533" alt="Code" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    </div>
+                  </div>
+                  <div className="space-y-4 pt-8">
+                    <div className="aspect-[3/4] rounded-3xl overflow-hidden">
+                      <img src="https://picsum.photos/seed/dev3/400/533" alt="Design" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    </div>
+                    <div className="aspect-square rounded-3xl overflow-hidden">
+                      <img src="https://picsum.photos/seed/dev4/400/400" alt="Launch" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Development Process */}
+          <section className="py-24 px-[5%] bg-white">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <Label>Our Workflow</Label>
+                <h2 className="text-3xl md:text-5xl font-display font-bold mt-4">Simple & Transparent Process</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 relative">
+                {/* Connecting Line (Desktop) */}
+                <div className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-100 -translate-y-1/2 z-0" />
+                
+                {[
+                  { step: "01", title: "Discovery", desc: "We dive deep into your requirements and business goals." },
+                  { step: "02", title: "Planning", desc: "Sitemap, layout planning, and technical architecture." },
+                  { step: "03", title: "UI Design", desc: "Pixel-perfect designs with your feedback and approvals." },
+                  { step: "04", title: "Development", desc: "Clean code, content setup, and performance optimization." },
+                  { step: "05", title: "QA Testing", desc: "Rigorous testing across devices and browsers." },
+                  { step: "06", title: "Launch", desc: "Final deployment and ongoing handover support." }
+                ].map((item, i) => (
+                  <div key={i} className="relative z-10 bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="text-4xl font-display font-black text-slate-100 mb-4">{item.step}</div>
+                    <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                    <p className="text-slate-600 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Why Choose Us (E-E-A-T) */}
+          <section className="py-24 px-[5%] bg-slate-50">
+            <div className="max-w-4xl mx-auto text-center">
+              <Label>Why Techeasify</Label>
+              <h2 className="text-3xl md:text-5xl font-display font-bold mt-4 mb-12">The Right Partner for Your Growth</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                {[
+                  { t: "Experience", d: "Years of building high-converting stores and apps for global brands." },
+                  { t: "Expertise", d: "Mastery over modern tech stacks like Next.js, Shopify, and Webflow." },
+                  { t: "Authoritativeness", d: "Recognized for technical excellence and result-driven strategies." },
+                  { t: "Trust", d: "Transparent communication, clear timelines, and dedicated support." }
+                ].map((item, i) => (
+                  <div key={i} className="p-6 rounded-2xl bg-white border border-slate-200">
+                    <h3 className="font-bold text-lg mb-2 flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-brand" />
+                      {item.t}
+                    </h3>
+                    <p className="text-slate-600 text-sm">{item.d}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* FAQ */}
+          <section className="py-24 px-[5%] bg-white">
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-16">
+                <Label>FAQ</Label>
+                <h2 className="text-3xl font-display font-bold mt-4">Common Questions</h2>
+              </div>
+              <div className="space-y-4">
+                {[
+                  { q: "How long does it take to build a website?", a: "Timelines vary by complexity. A standard CMS site takes 3-4 weeks, while custom apps can take 8-12 weeks." },
+                  { q: "Will I be able to manage the site myself?", a: "Yes! We provide full handover support and training so you can easily update content and manage your site." },
+                  { q: "Do you offer post-launch support?", a: "Absolutely. We provide ongoing maintenance, security updates, and performance monitoring to ensure your site stays at its best." }
+                ].map((item, i) => (
+                  <div key={i} className="p-6 rounded-2xl border border-slate-100 bg-slate-50">
+                    <h3 className="font-bold text-slate-900 mb-2">{item.q}</h3>
+                    <p className="text-slate-600 text-sm">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
       )}
 
       <CTABand />
